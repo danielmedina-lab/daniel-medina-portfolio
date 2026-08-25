@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Bot,
   BriefcaseBusiness,
+  Building2,
   CheckCircle2,
   Cpu,
   GraduationCap,
@@ -287,6 +288,7 @@ export function CredentialsSection({ dictionary }: LocalizedSectionProps) {
 
 export function TechnicalStorySection({ dictionary }: LocalizedSectionProps) {
   const content = dictionary.technicalStory;
+  const icons = [Building2, BriefcaseBusiness, Layers3, Cpu, Bot];
 
   return (
     <section className="bg-mist py-20">
@@ -296,16 +298,26 @@ export function TechnicalStorySection({ dictionary }: LocalizedSectionProps) {
           title={content.title}
           body={content.body}
         />
-        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-7">
-          {content.timeline.map((milestone, index) => (
-            <div className="relative rounded-lg border border-line bg-white p-4 shadow-card" key={milestone}>
-              <p className="text-xs font-black text-teal">{String(index + 1).padStart(2, "0")}</p>
-              <p className="mt-3 text-sm font-semibold leading-6 text-ink">{milestone}</p>
-              {index < content.timeline.length - 1 ? (
-                <ArrowRight aria-hidden="true" className="absolute -right-3 top-1/2 z-10 hidden -translate-y-1/2 text-teal lg:block" size={16} />
-              ) : null}
-            </div>
-          ))}
+        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          {content.capabilities.map((capability, index) => {
+            const Icon = icons[index] ?? Cpu;
+
+            return (
+              <article className="rounded-lg border border-line bg-white p-5 shadow-card" key={capability.title}>
+                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-mint text-teal">
+                  <Icon aria-hidden="true" size={19} />
+                </div>
+                <h3 className="mt-4 text-sm font-black tracking-[0.08em] text-ink">{capability.title}</h3>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {capability.items.map((item) => (
+                    <li className="rounded bg-mist px-2.5 py-1.5 text-xs font-medium text-slate" key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

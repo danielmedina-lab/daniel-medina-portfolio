@@ -49,12 +49,12 @@ export const portfolioContent = {
       links: { privacy: "Privacidad", assets: "Activos", designSystem: "Sistema visual", github: "GitHub" }
     },
     hero: {
-      badge: "Disponible · Remoto · Híbrido · Presencial Madrid",
+      badge: "PROJECT MANAGER · TECHNOLOGY DELIVERY · APPLIED AI",
       name: "Daniel Medina Sánchez",
       headline:
-        "Project Manager. Antes de gestionar proyectos tecnológicos, ya gestionaba negocio, personas y resultados a escala.",
+        "Dirijo proyectos complejos donde negocio, personas y tecnología tienen que funcionar a la vez.",
       body:
-        "He dirigido operaciones de 560+ personas en 4 países y P&L superior a 12 M€/año. En Ayesa trasladé esa experiencia al mundo tecnológico: Madrid Digital, Justicia y UOC como consultor estratégico de IA y, actualmente, Project Manager en ICEX.\n\nEn paralelo llevo años profundizando en tecnología e inteligencia artificial. TransformIA es donde esa evolución se convierte en sistemas reales. Mi valor está en moverme entre negocio, delivery y tecnología sin perder ninguno de los tres planos.",
+        "Actualmente soy Project Manager en ICEX dentro de Ayesa, después de trabajar en iniciativas para Madrid Digital, Justicia y UOC. Aporto más de 15 años de experiencia gestionando equipos, clientes, operaciones y resultados, con responsabilidad sobre organizaciones de 560+ personas, cuatro países y P&L superior a 12 M€/año.\n\nA esa base de gestión sumo una profundidad tecnológica poco habitual en un perfil de Project Management: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, datos, programación e IA aplicada. Mi trabajo está en conectar estrategia, delivery y ejecución hasta que las cosas funcionan.",
       downloadCv: "Descargar CV",
       viewAyesa: "Ver evolución en Ayesa",
       contact: "Solicitar entrevista",
@@ -76,34 +76,34 @@ export const portfolioContent = {
       ]
     },
     valueAreas: {
-      eyebrow: "POR QUÉ ENCAJO EN PROJECT MANAGEMENT",
-      title: "Gestión a escala + delivery tecnológico + profundidad real en IA",
+      eyebrow: "PROJECT MANAGEMENT",
+      title: "Gestión, delivery y tecnología en un mismo perfil",
       body:
-        "No llegué a Project Management desde un curso. Llegué después de años gestionando presupuesto, capacidad, SLA, desviaciones, equipos distribuidos, clientes y múltiples líneas de servicio.\n\nAyesa convirtió esa disciplina de gestión en delivery tecnológico. TransformIA añade la capa que hoy diferencia mi perfil: puedo moverme entre negocio, proyecto y tecnología con criterio propio.",
+        "Gestiono proyectos con una visión completa del problema: objetivos, personas, recursos, riesgos, stakeholders, tecnología y resultado de negocio. Mi experiencia previa en operaciones de gran escala me aporta disciplina de ejecución; mi recorrido tecnológico me permite entender con profundidad qué estamos construyendo y trabajar de tú a tú con equipos técnicos.",
       items: [
         {
-          title: "Gobierno y delivery",
-          body: "Planificación, recursos, hitos, riesgos, contingencias, reporting y ejecución.",
-          tags: ["Planificación", "Recursos", "RAID", "Reporting"]
+          title: "DELIVERY",
+          body: "Planificación · hitos · recursos · dependencias · riesgos · contingencias · seguimiento · entregables",
+          tags: ["Planificación", "Dependencias", "Riesgos", "Entregables"]
         },
         {
-          title: "Stakeholders y negocio",
-          body: "Cliente, presupuesto, P&L, prioridades, negociación y toma de decisiones.",
-          tags: ["Stakeholders", "P&L", "Negociación", "Decisiones"]
+          title: "GOVERNANCE & STAKEHOLDERS",
+          body: "Presupuesto · prioridades · reporting ejecutivo · cliente · negociación · toma de decisiones",
+          tags: ["Presupuesto", "Stakeholders", "Reporting", "Decisiones"]
         },
         {
-          title: "Tecnología e IA aplicada",
-          body: "Digital Workplace, ITSM, Azure, agentes, automatización y arquitectura de sistemas de IA.",
-          tags: ["ITSM", "Azure", "Agentes", "Arquitectura IA"]
+          title: "TECHNOLOGY",
+          body: "Digital Workplace · ITSM · Microsoft 365 · Jira/JSM · Salesforce · Azure · datos · automatización · IA aplicada",
+          tags: ["Microsoft 365", "Salesforce", "Azure", "IA aplicada"]
         }
       ]
     },
     proof: {
-      eyebrow: "TRAYECTORIA PROFESIONAL",
-      title: "Operaciones → Service Delivery → Business Management → Project Management",
+      eyebrow: "EXPERIENCIA",
+      title: "Project Management con base ejecutiva y tecnológica",
       body:
-        "La progresión es continua: primero aprendí a sostener operaciones, después a gobernar servicios y negocio a escala, y finalmente trasladé esa disciplina a consultoría tecnológica y Project Management.",
-      careerLabel: "Evolución profesional",
+        "Actualmente lidero proyectos tecnológicos con una experiencia acumulada que abarca operaciones, Service Delivery, Business Management, consultoría y transformación.",
+      careerLabel: "Experiencia acumulada",
       careerSteps: [
         { period: "2009–2016", title: "Transcom", detail: "Operaciones · coordinación" },
         { period: "2016–2023", title: "Uniglobal", detail: "Service Delivery · Business Management" },
@@ -111,8 +111,8 @@ export const portfolioContent = {
         { period: "2025–actualidad", title: "Ayesa", detail: "Technology Consulting → Project Management" }
       ],
       ayesa: {
-        eyebrow: "AYESA · TECHNOLOGY CONSULTING → PROJECT MANAGEMENT",
-        title: "De consultoría estratégica a Project Manager en ICEX",
+        eyebrow: "AYESA · PROJECT MANAGEMENT & TECHNOLOGY CONSULTING",
+        title: "Project Management en ICEX y experiencia tecnológica en sector público",
         period: "ago. 2025 · actualidad",
         items: [
           {
@@ -142,16 +142,16 @@ export const portfolioContent = {
           }
         ],
         supporting:
-          "Ayesa fue el puente entre mi experiencia directiva y el mundo tecnológico. Entré en consultoría estratégica y fui asumiendo cada vez más responsabilidad de delivery hasta evolucionar a Project Manager en ICEX. No empecé entonces a gestionar: trasladé a tecnología una disciplina que ya venía de años dirigiendo operaciones complejas.",
+          "Actualmente gestiono proyectos en ICEX dentro de Ayesa, con responsabilidad sobre planificación, seguimiento, entregables, contingencias, stakeholders, reporting y coordinación de equipos. Mi recorrido previo por Madrid Digital, Justicia y UOC amplió esa experiencia hacia transformación, Digital Workplace, sector público e IA aplicada.",
         cta: "Ver caso Ayesa",
         slug: "ayesa-digital-workplace-sector-publico-icex"
       }
     },
     konecta: {
       eyebrow: "KONECTA · ESCALA EJECUTIVA",
-      title: "Antes del Project Management tecnológico, ya gestionaba complejidad a escala.",
+      title: "Escala ejecutiva que hoy aplico al Project Management",
       body:
-        "Como Business Manager goberné SLA/KPI, capacidad, facturación, margen, calidad, continuidad, desviaciones y relación ejecutiva con cliente. Hoy esa experiencia se traduce directamente en resource planning, financial governance, risk/issues, stakeholders y multi-workstream delivery.",
+        "En Konecta dirigí un ámbito de 560+ personas en cuatro países y P&L superior a 12 M€/año, gobernando capacidad, SLA/KPI, calidad, facturación, margen, desviaciones, continuidad y relación ejecutiva con cliente. Esa experiencia forma parte directa de cómo gestiono hoy recursos, riesgos, stakeholders y múltiples workstreams.",
       metrics: [
         { value: "560+", label: "personas" },
         { value: "4", label: "países" },
@@ -171,7 +171,7 @@ export const portfolioContent = {
       eyebrow: "TECNOLOGÍA EN PARALELO · PROOF OF WORK",
       title: "TransformIA: no estudio la IA desde fuera. La construyo.",
       body:
-        "Mi relación con la tecnología empezó mucho antes de la IA generativa. Crecí trasteando y montando ordenadores con mi padre, desde Spectrum y PCs 386/486 hasta mi propio Pentium III.\n\nA partir de 2020/2021 empecé a profundizar deliberadamente en inteligencia artificial. Después vinieron Machine Learning, Computer Science, Python, CS50x, CS50AI, Azure y agentes.\n\nTransformIA es donde todo eso deja de ser formación y se convierte en sistemas. Diseño y construyo productos, runtimes y arquitecturas de IA aplicada para entender de primera mano qué funciona, qué falla, cómo se gobierna y cómo puede trasladarse a negocio.",
+        "TransformIA es mi espacio de construcción tecnológica. Diseño productos y sistemas de IA aplicada para trabajar de primera mano con agentes, runtimes, recuperación semántica, gobierno, evidencia, interfaces y Azure.\n\nNo lo utilizo para demostrar que sé usar herramientas de IA. Lo utilizo para comprender cómo se diseñan, integran, gobiernan y convierten en producto.",
       projectsTitle: "Sistemas construidos · estado delimitado por evidencia",
       projects: [
         {
@@ -211,18 +211,16 @@ export const portfolioContent = {
       slug: "transformia-proof-of-work"
     },
     technicalStory: {
-      eyebrow: "TRAYECTORIA TÉCNICA",
-      title: "De montar ordenadores a construir sistemas de IA",
+      eyebrow: "TECNOLOGÍA EN PARALELO",
+      title: "La tecnología nunca fue una reconversión",
       body:
-        "La informática siempre estuvo ahí. Durante años mi carrera profesional creció por operaciones y negocio mientras, en paralelo, seguía aprendiendo tecnología. Desde 2020/2021 esa segunda trayectoria se volvió deliberada: IA, Machine Learning, Computer Science, Python y posteriormente Azure y arquitectura de agentes.\n\nHoy las dos líneas convergen. La experiencia ejecutiva me permite entender qué necesita una organización; la base técnica me permite trabajar directamente con quienes tienen que construirlo.",
-      timeline: [
-        "Spectrum / 386 / 486 / Pentium",
-        "IA · 2020/21",
-        "ML & AI · 2023",
-        "CS50x",
-        "CS50AI",
-        "Azure / Foundry",
-        "TransformIA"
+        "La informática ha formado parte de mi vida desde niño. Empecé con Spectrum y PCs 386/486, montando y configurando ordenadores con mi padre, y desde entonces nunca dejé de aprender ni de trabajar con tecnología.\n\nDurante mi carrera profesional esa capacidad convivió con operaciones y management: Excel y Microsoft Office a nivel avanzado, sistemas corporativos, datos, CRM, automatización y herramientas de productividad. Desde 2020/2021 profundicé de forma deliberada en inteligencia artificial, Machine Learning, Computer Science y desarrollo de software.\n\nHoy trabajo con Microsoft 365, Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM y herramientas de IA. TransformIA es la expresión práctica de esa base técnica: sistemas y productos que diseño y construyo para aprender haciendo y entender la tecnología desde dentro.",
+      capabilities: [
+        { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Excel avanzado", "Power BI", "Azure", "Microsoft Foundry"] },
+        { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
+        { title: "CRM & BUSINESS SYSTEMS", items: ["Salesforce", "Automatización de procesos", "Reporting", "Sistemas de conocimiento"] },
+        { title: "SOFTWARE & DATA", items: ["Python", "C", "R", "SQL", "JavaScript / TypeScript", "React / Next.js", "APIs", "Git / GitHub"] },
+        { title: "APPLIED AI", items: ["Agentes", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Automatización"] }
       ]
     },
     conciergeSection: {
@@ -234,9 +232,9 @@ export const portfolioContent = {
     },
     credentialsSection: {
       eyebrow: "FORMACIÓN Y CREDENCIALES",
-      title: "Base técnica y disciplina de delivery",
+      title: "Formación que refuerza una base técnica práctica",
       body:
-        "Credenciales que refuerzan una trayectoria ya construida en gestión: fundamentos de Computer Science e IA, trabajo iterativo y formación continua en Azure y arquitectura de agentes.",
+        "Combino aprendizaje continuo con construcción real. HarvardX CS50x y CS50AI reforzaron fundamentos que ya aplico en software e IA; SMPC® formaliza la disciplina Agile y Scrum que acompaña mi experiencia de delivery.",
       items: [
         { title: "HarvardX CS50x", subtitle: "Introduction to Computer Science", body: "Computer Science, Python, SQL, algoritmos y estructuras de datos." },
         { title: "HarvardX CS50AI", subtitle: "Introduction to Artificial Intelligence with Python", body: "Búsqueda, conocimiento, incertidumbre, optimización, machine learning, redes neuronales y lenguaje." },
@@ -267,7 +265,7 @@ export const portfolioContent = {
     },
     casePage: {
       back: "Volver a experiencia", role: "Rol", sector: "Ámbito", boundary: "Alcance público", evidence: "Claves", nextStep: "Siguiente paso",
-      nextStepBody: "Descarga el CV o vuelve a la experiencia para revisar la progresión profesional completa."
+      nextStepBody: "Descarga el CV o vuelve a la experiencia para revisar el perfil profesional completo."
     },
     pages: {
       cv: { title: "CV | Daniel Medina Sánchez", description: "CV de Daniel Medina Sánchez en español e inglés." },
@@ -300,7 +298,7 @@ export const portfolioContent = {
       approvalDefault: "La solicitud abre el canal de contacto; Daniel decide y responde personalmente.", pendingApproval: "Solicitud preparada. Utiliza el enlace de contacto para enviarla.",
       answers: {
         operations: { content: "La experiencia operativa prueba seniority: 560+ personas, 4 países, P&L superior a 12 M€ y 8 líneas de servicio. Esa escala se traduce en presupuesto, recursos, riesgos, stakeholders y delivery multistream.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["560+ personas", "4 países", ">12M€ P&L", "8 líneas"] },
-        publicSector: { content: "En Ayesa trabajó en Madrid Digital, Justicia y UOC antes de evolucionar a Project Manager en ICEX, coordinando un perímetro de 30+ personas.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Ayesa", "ICEX", "30+ personas", "Jira/JSM"] },
+        publicSector: { content: "Actualmente es Project Manager en ICEX dentro de Ayesa y coordina un perímetro de 30+ personas. Su experiencia en la compañía incluye también Madrid Digital, Justicia y UOC.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Ayesa", "ICEX", "30+ personas", "Jira/JSM"] },
         technical: { content: "Su base técnica combina CS50x, CS50AI, Machine Learning, Python, Azure y construcción de sistemas en TransformIA. La tecnología es una trayectoria paralela y demostrable.", confidence: "high", fitScore: 94, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["CS50x", "CS50AI", "Azure", "TransformIA"] },
         hitl: { content: "Los sistemas de TransformIA mantienen políticas, evidencia y revisión humana como límites de gobierno. El portfolio no presenta esa implementación como producción.", confidence: "high", fitScore: 91, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Policy", "Evidence", "Human-in-the-Loop"] },
         ai: { content: "El encaje principal es Project Manager o Technical PM en contextos de Technology Delivery, transformación digital e IA aplicada. Aporta gestión ejecutiva previa y criterio técnico propio.", confidence: "high", fitScore: 97, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Project Manager", "Technology Delivery", "Applied AI"] },
@@ -309,15 +307,15 @@ export const portfolioContent = {
     },
     cases: [
       {
-        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: de consultoría tecnológica a Project Manager en ICEX", eyebrow: "TECHNOLOGY CONSULTING → PROJECT MANAGEMENT",
+        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: Project Management en ICEX y consultoría tecnológica", eyebrow: "PROJECT MANAGEMENT · TECHNOLOGY CONSULTING",
         role: "Project Manager", sector: "Sector público · Digital Workplace · ITSM · transformación tecnológica",
-        summary: "Progresión desde consultoría estratégica de IA en Madrid Digital, Justicia y UOC hasta Project Manager en ICEX.",
+        summary: "Project Manager en ICEX, con experiencia previa en consultoría estratégica de IA para Madrid Digital, Justicia y UOC.",
         proof: ["Madrid Digital", "Justicia", "UOC", "ICEX", "30+ personas", "Jira/JSM", "Microsoft 365", "Power BI"],
         tags: ["Project Management", "Technology Delivery", "Public Sector", "ITSM"],
         publicSafeNote: "Descripción profesional sin documentación interna, datos de cliente ni información confidencial.",
         sections: [
-          { title: "Progresión", body: ["En 2025 trabajé como consultor estratégico de IA y Digital Workplace en Madrid Digital, con foco en estrategia, roadmaps, modernización y documentación ejecutiva.", "Después participé en Justicia, con análisis funcional y transformación de procesos en Administración Pública, y en UOC, con casos de uso, knowledge/CRM, Salesforce y análisis funcional.", "Desde 2026 soy Project Manager en ICEX. Coordino un perímetro de 30+ personas y trabajo sobre planificación, seguimiento, entregables, contingencias, stakeholders y reporting con Microsoft 365, Jira/JSM y Power BI."] },
-          { title: "Qué demuestra", body: "Ayesa trasladó a tecnología una disciplina de gestión ya consolidada en operaciones: ordenar trabajo, coordinar personas, anticipar incidencias, mantener foco ejecutivo y hacer avanzar entregables." }
+          { title: "Responsabilidad actual", body: ["Soy Project Manager en ICEX. Coordino un perímetro de 30+ personas y trabajo sobre planificación, seguimiento, entregables, contingencias, stakeholders y reporting con Microsoft 365, Jira/JSM y Power BI.", "Mi experiencia en Ayesa incluye Madrid Digital, con estrategia, roadmaps, modernización y documentación ejecutiva; Justicia, con análisis funcional y transformación de procesos; y UOC, con casos de uso, knowledge/CRM, Salesforce y análisis funcional."] },
+          { title: "Qué demuestra", body: "Mi trabajo en Ayesa combina Project Management, coordinación de personas, gestión de stakeholders, foco ejecutivo y conocimiento de entornos tecnológicos y de sector público." }
         ]
       },
       {
@@ -334,12 +332,12 @@ export const portfolioContent = {
       {
         slug: "transformia-proof-of-work", title: "TransformIA: sistemas de IA aplicada como proof of work", eyebrow: "TECNOLOGÍA EN PARALELO",
         role: "Diseño y construcción de sistemas propios", sector: "Runtimes, agentes, gobierno, producto web y activación",
-        summary: "Años de aprendizaje técnico convertidos en productos, runtimes y arquitecturas de IA aplicada.",
+        summary: "Productos, runtimes y arquitecturas que demuestran una base técnica práctica en IA aplicada.",
         proof: ["Exocortex Runtime", "Astrolabio Metamente", "Web Flagship", "Workpod Launcher", "Human-in-the-Loop", "MCP"],
         tags: ["Applied AI", "Agents", "Governance", "Architecture"],
         publicSafeNote: "Las capacidades se describen según evidencia de repositorio y con límites explícitos; no se presentan como producción ni validación de cliente.",
         sections: [
-          { title: "Por qué existe", body: "TransformIA es donde la formación técnica se convierte en sistemas. Construir permite entender de primera mano qué funciona, qué falla, cómo se gobierna y qué necesita una organización para trasladarlo a trabajo real." },
+          { title: "Por qué existe", body: "TransformIA reúne los sistemas que diseño y construyo para entender de primera mano qué funciona, qué falla, cómo se gobierna y qué necesita una organización para aplicar IA al trabajo real." },
           { title: "Arquitectura y límites", body: ["Exocortex Runtime concentra ejecución gobernada, políticas, evidencia y aprobación humana. Astrolabio explora contexto, autoridad y recuperación semántica sin sustituir la autoridad del Runtime.", "Web Flagship presenta proyecciones public-safe. Workpod Launcher prepara activación, diagnóstico y evidencia local. Ninguna de estas tarjetas afirma despliegue, producción o validación de cliente."] }
         ]
       }
@@ -362,26 +360,26 @@ export const portfolioContent = {
       links: { privacy: "Privacy", assets: "Assets", designSystem: "Design system", github: "GitHub" }
     },
     hero: {
-      badge: "Available · Remote · Hybrid · On-site in Madrid", name: "Daniel Medina Sánchez",
-      headline: "Project Manager. Before leading technology projects, I was already running businesses, teams, and results at scale.",
-      body: "I led operations of 560+ people across four countries with P&L above €12M/year. At Ayesa, I transferred that experience into technology: Madrid Digital, Justice, and UOC as an AI Strategy Consultant, and now ICEX as a Project Manager.\n\nIn parallel, I have spent years building depth in technology and artificial intelligence. TransformIA is where that progression becomes working systems. My value is the ability to move between business, delivery, and technology without losing sight of any of them.",
+      badge: "PROJECT MANAGER · TECHNOLOGY DELIVERY · APPLIED AI", name: "Daniel Medina Sánchez",
+      headline: "I lead complex projects where business, people, and technology must work together.",
+      body: "I am currently a Project Manager at ICEX within Ayesa, after working on initiatives for Madrid Digital, Justice, and UOC. I bring more than 15 years of experience managing teams, clients, operations, and business results, including responsibility for organizations of 560+ people across four countries and P&L above €12M/year.\n\nI combine that management foundation with unusual technical depth for a Project Management profile: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, data, programming, and applied AI. My job is to connect strategy, delivery, and execution until things work.",
       downloadCv: "Download CV", viewAyesa: "View Ayesa progression", contact: "Request interview", credentialsLabel: "CAREER", credentials: sharedCareer, primaryCvHref: cvRoutes.en,
       profile: { label: "Current profile", name: "Daniel Medina", role: "Project Manager · Technology Delivery · Applied AI", chips: ["Project Management", "Technology Delivery", "Applied AI"] },
       stats: [{ value: "15+", label: "years" }, { value: "560+", label: "people" }, { value: "4", label: "countries" }, { value: "€12M+", label: "P&L" }, { value: "Project Manager", label: "ICEX / Ayesa · present" }]
     },
     valueAreas: {
-      eyebrow: "WHY I FIT PROJECT MANAGEMENT", title: "Management at scale + technology delivery + real depth in AI",
-      body: "I did not reach Project Management through a course. I arrived after years of owning budgets, capacity, SLA, deviations, distributed teams, client relationships, and multiple service lines.\n\nAyesa turned that management discipline into technology delivery. TransformIA adds the layer that now differentiates my profile: I can move across business, project, and technology with informed judgment.",
+      eyebrow: "PROJECT MANAGEMENT", title: "Management, delivery, and technology in one profile",
+      body: "I manage projects with a complete view of the problem: objectives, people, resources, risks, stakeholders, technology, and business outcomes. My experience in large-scale operations brings execution discipline; my technical background gives me a deeper understanding of what we are building and lets me work directly with technical teams.",
       items: [
-        { title: "Governance and delivery", body: "Planning, resources, milestones, risks, contingencies, reporting, and execution.", tags: ["Planning", "Resources", "RAID", "Reporting"] },
-        { title: "Stakeholders and business", body: "Clients, budget, P&L, priorities, negotiation, and decision-making.", tags: ["Stakeholders", "P&L", "Negotiation", "Decisions"] },
-        { title: "Technology and applied AI", body: "Digital Workplace, ITSM, Azure, agents, automation, and AI systems architecture.", tags: ["ITSM", "Azure", "Agents", "AI architecture"] }
+        { title: "DELIVERY", body: "Planning · milestones · resources · dependencies · risks · contingencies · tracking · deliverables", tags: ["Planning", "Dependencies", "Risks", "Deliverables"] },
+        { title: "GOVERNANCE & STAKEHOLDERS", body: "Budget · priorities · executive reporting · client · negotiation · decision-making", tags: ["Budget", "Stakeholders", "Reporting", "Decisions"] },
+        { title: "TECHNOLOGY", body: "Digital Workplace · ITSM · Microsoft 365 · Jira/JSM · Salesforce · Azure · data · automation · applied AI", tags: ["Microsoft 365", "Salesforce", "Azure", "Applied AI"] }
       ]
     },
     proof: {
-      eyebrow: "PROFESSIONAL TRACK RECORD", title: "Operations → Service Delivery → Business Management → Project Management",
-      body: "The progression is continuous: I learned to sustain operations, then govern services and business at scale, and finally transferred that discipline into technology consulting and Project Management.",
-      careerLabel: "Career progression",
+      eyebrow: "EXPERIENCE", title: "Project Management backed by executive and technical depth",
+      body: "I currently lead technology projects with experience spanning operations, Service Delivery, Business Management, consulting, and transformation.",
+      careerLabel: "Experience at a glance",
       careerSteps: [
         { period: "2009–2016", title: "Transcom", detail: "Operations · coordination" },
         { period: "2016–2023", title: "Uniglobal", detail: "Service Delivery · Business Management" },
@@ -389,27 +387,27 @@ export const portfolioContent = {
         { period: "2025–present", title: "Ayesa", detail: "Technology Consulting → Project Management" }
       ],
       ayesa: {
-        eyebrow: "AYESA · TECHNOLOGY CONSULTING → PROJECT MANAGEMENT", title: "From strategic consulting to Project Manager at ICEX", period: "Aug 2025 · present",
+        eyebrow: "AYESA · PROJECT MANAGEMENT & TECHNOLOGY CONSULTING", title: "Project Management at ICEX and public-sector technology experience", period: "Aug 2025 · present",
         items: [
           { period: "2025", client: "Madrid Digital", role: "AI Strategy & Digital Workplace Consultant", detail: "Strategy · roadmaps · workplace modernization · executive documentation" },
           { period: "2025", client: "Justice", role: "AI Strategy Consultant", detail: "Functional analysis · process transformation · public administration" },
           { period: "2025", client: "UOC", role: "AI Strategy Consultant", detail: "Use cases · knowledge/CRM · Salesforce · functional analysis" },
           { period: "2026 → PRESENT", client: "ICEX", role: "PROJECT MANAGER", detail: "30+ people · planning · tracking · deliverables · contingencies · stakeholders · Jira/JSM · Microsoft 365 · Power BI" }
         ],
-        supporting: "Ayesa was the bridge between my executive experience and technology. I joined in strategic consulting and progressively took on greater delivery responsibility until moving into Project Management at ICEX. That was not when I started managing; it was when I transferred years of complex operations management into technology.",
+        supporting: "I currently manage projects at ICEX within Ayesa, with responsibility for planning, tracking, deliverables, contingencies, stakeholders, reporting, and team coordination. My earlier work across Madrid Digital, Justice, and UOC broadened that experience across transformation, Digital Workplace, the public sector, and applied AI.",
         cta: "View Ayesa case", slug: "ayesa-digital-workplace-sector-publico-icex"
       }
     },
     konecta: {
-      eyebrow: "KONECTA · EXECUTIVE SCALE", title: "Before technology Project Management, I was already managing complexity at scale.",
-      body: "As Business Manager, I governed SLA/KPI, capacity, billing, margin, quality, continuity, deviations, and executive client relationships. Today, that experience translates directly into resource planning, financial governance, risk/issues, stakeholders, and multi-workstream delivery.",
+      eyebrow: "KONECTA · EXECUTIVE SCALE", title: "Executive scale applied to Project Management",
+      body: "At Konecta, I led a 560+ person scope across four countries with P&L above €12M/year, governing capacity, SLA/KPI, quality, billing, margin, deviations, continuity, and executive client relationships. That experience directly shapes how I manage resources, risks, stakeholders, and multiple workstreams today.",
       metrics: [{ value: "560+", label: "people" }, { value: "4", label: "countries" }, { value: ">€12M", label: "annual P&L" }, { value: "8", label: "service lines" }],
       details: ["SLA/KPI, capacity, and quality", "Billing, margin, and deviations", "Continuity, escalations, and corrective plans", "Executive relationship with a strategic client"],
       cta: "View Konecta case", slug: "konecta-operaciones-escala-seguros"
     },
     lab: {
       eyebrow: "TECHNOLOGY IN PARALLEL · PROOF OF WORK", title: "TransformIA: I do not study AI from the outside. I build it.",
-      body: "My relationship with technology started long before generative AI. I grew up taking apart and building computers with my father, from Spectrum and 386/486 PCs to my own Pentium III.\n\nFrom 2020/2021, I began studying artificial intelligence deliberately. Machine Learning, Computer Science, Python, CS50x, CS50AI, Azure, and agents followed.\n\nTransformIA is where that learning becomes systems. I design and build products, runtimes, and applied-AI architectures to understand first-hand what works, what fails, how it should be governed, and how it can create value in business.",
+      body: "TransformIA is where I build technology. I design applied-AI products and systems to work directly with agents, runtimes, semantic recovery, governance, evidence, interfaces, and Azure.\n\nI do not use it to demonstrate familiarity with AI tools. I use it to understand how AI systems are designed, integrated, governed, and turned into products.",
       projectsTitle: "Systems built · status bounded by evidence",
       projects: [
         { title: "Exocortex Runtime", status: "Repository-implemented baseline", body: "A governed agentic runtime for traceable work: Work Units, tool registry, policy engine, evidence, and human approval. MCP is a governed boundary, not permission to act.", tags: ["Agents", "Policy", "Evidence", "Human-in-the-Loop", "MCP"], href: "https://github.com/TransformIA-AI/transformia-exocortex-runtime" },
@@ -420,17 +418,23 @@ export const portfolioContent = {
       cta: "View TransformIA in detail", slug: "transformia-proof-of-work"
     },
     technicalStory: {
-      eyebrow: "TECHNICAL JOURNEY", title: "From building computers to building AI systems",
-      body: "Computing was always there. For years, my professional career grew through operations and business while I continued learning technology in parallel. From 2020/2021, that second track became deliberate: AI, Machine Learning, Computer Science, Python, then Azure and agent architecture.\n\nToday, the two tracks converge. Executive experience helps me understand what an organization needs; technical depth lets me work directly with the people who have to build it.",
-      timeline: ["Spectrum / 386 / 486 / Pentium", "AI · 2020/21", "ML & AI · 2023", "CS50x", "CS50AI", "Azure / Foundry", "TransformIA"]
+      eyebrow: "TECHNOLOGY IN PARALLEL", title: "Technology was never a career conversion",
+      body: "Computing has been part of my life since childhood. I started with Spectrum and 386/486 PCs, building and configuring computers with my father, and I have continued learning and working with technology ever since.\n\nThroughout my professional career, that capability coexisted with operations and management: advanced Excel and Microsoft Office, corporate systems, data, CRM, automation, and productivity tools. From 2020/2021, I deepened my work in artificial intelligence, Machine Learning, Computer Science, and software development.\n\nToday I work with Microsoft 365, Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM, and AI tools. TransformIA is the practical expression of that technical foundation: systems and products I design and build to learn by doing and understand technology from the inside.",
+      capabilities: [
+        { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Advanced Excel", "Power BI", "Azure", "Microsoft Foundry"] },
+        { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
+        { title: "CRM & BUSINESS SYSTEMS", items: ["Salesforce", "Process automation", "Reporting", "Knowledge systems"] },
+        { title: "SOFTWARE & DATA", items: ["Python", "C", "R", "SQL", "JavaScript / TypeScript", "React / Next.js", "APIs", "Git / GitHub"] },
+        { title: "APPLIED AI", items: ["Agents", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Automation"] }
+      ]
     },
     conciergeSection: {
       eyebrow: "PROFESSIONAL FIT", title: "Direct answers for recruiters and hiring managers",
       body: "An interactive guide based only on public portfolio information. It summarizes experience, scale, and technical grounding without sending messages or taking action.", badge: "Public information · human review"
     },
     credentialsSection: {
-      eyebrow: "EDUCATION & CREDENTIALS", title: "Technical depth and delivery discipline",
-      body: "Credentials that strengthen an established management career: Computer Science and AI foundations, iterative delivery, and continuous learning in Azure and agent architecture.",
+      eyebrow: "EDUCATION & CREDENTIALS", title: "Learning that strengthens a practical technical foundation",
+      body: "I combine continuous learning with real construction. HarvardX CS50x and CS50AI strengthened foundations I already apply in software and AI; SMPC® formalizes the Agile and Scrum discipline that supports my delivery experience.",
       items: [
         { title: "HarvardX CS50x", subtitle: "Introduction to Computer Science", body: "Computer Science, Python, SQL, algorithms, and data structures." },
         { title: "HarvardX CS50AI", subtitle: "Introduction to Artificial Intelligence with Python", body: "Search, knowledge, uncertainty, optimization, machine learning, neural networks, and language." },
@@ -452,7 +456,7 @@ export const portfolioContent = {
       body: "I am looking for Project Manager, Technical PM, Technology Delivery, and technology/AI transformation roles. I prefer remote work, while remaining open to hybrid or on-site opportunities in Madrid when the project and opportunity justify it.",
       requestInterview: "Request interview", linkedin: "LinkedIn", cvHub: "Download CV"
     },
-    casePage: { back: "Back to experience", role: "Role", sector: "Scope", boundary: "Public boundary", evidence: "Key evidence", nextStep: "Next step", nextStepBody: "Download the CV or return to experience to review the full professional progression." },
+    casePage: { back: "Back to experience", role: "Role", sector: "Scope", boundary: "Public boundary", evidence: "Key evidence", nextStep: "Next step", nextStepBody: "Download the CV or return to experience to review the full professional profile." },
     pages: {
       cv: { title: "CV | Daniel Medina Sánchez", description: "Daniel Medina Sánchez's CV in Spanish and English." },
       lab: { title: "TransformIA | Proof of Work", description: "Applied-AI systems and architecture built by Daniel Medina Sánchez." },
@@ -469,7 +473,7 @@ export const portfolioContent = {
       approvalDefault: "The request opens the contact channel; Daniel decides and replies personally.", pendingApproval: "Request prepared. Use the contact link to send it.",
       answers: {
         operations: { content: "The operations background proves seniority: 560+ people, four countries, P&L above €12M, and eight service lines. That scale translates into budget, resources, risks, stakeholders, and multi-workstream delivery.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["560+ people", "4 countries", ">€12M P&L", "8 lines"] },
-        publicSector: { content: "At Ayesa, he worked across Madrid Digital, Justice, and UOC before progressing into a Project Manager role at ICEX, coordinating a 30+ person perimeter.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Ayesa", "ICEX", "30+ people", "Jira/JSM"] },
+        publicSector: { content: "He is currently a Project Manager at ICEX within Ayesa, coordinating a 30+ person perimeter. His experience with the company also includes Madrid Digital, Justice, and UOC.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Ayesa", "ICEX", "30+ people", "Jira/JSM"] },
         technical: { content: "His technical grounding combines CS50x, CS50AI, Machine Learning, Python, Azure, and hands-on systems work through TransformIA. Technology is a parallel, demonstrable track.", confidence: "high", fitScore: 94, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["CS50x", "CS50AI", "Azure", "TransformIA"] },
         hitl: { content: "TransformIA systems use policy, evidence, and human review as governance boundaries. The portfolio does not present this work as production.", confidence: "high", fitScore: 91, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Policy", "Evidence", "Human-in-the-Loop"] },
         ai: { content: "The primary fit is Project Manager or Technical PM in Technology Delivery, digital transformation, and applied-AI contexts. He brings prior executive management and informed technical judgment.", confidence: "high", fitScore: 97, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Project Manager", "Technology Delivery", "Applied AI"] },
@@ -478,13 +482,13 @@ export const portfolioContent = {
     },
     cases: [
       {
-        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: from technology consulting to Project Manager at ICEX", eyebrow: "TECHNOLOGY CONSULTING → PROJECT MANAGEMENT", role: "Project Manager",
-        sector: "Public sector · Digital Workplace · ITSM · technology transformation", summary: "Progression from AI strategic consulting across Madrid Digital, Justice, and UOC into Project Management at ICEX.",
+        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: Project Management at ICEX and technology consulting", eyebrow: "PROJECT MANAGEMENT · TECHNOLOGY CONSULTING", role: "Project Manager",
+        sector: "Public sector · Digital Workplace · ITSM · technology transformation", summary: "Project Manager at ICEX, with previous AI strategy consulting experience across Madrid Digital, Justice, and UOC.",
         proof: ["Madrid Digital", "Justice", "UOC", "ICEX", "30+ people", "Jira/JSM", "Microsoft 365", "Power BI"], tags: ["Project Management", "Technology Delivery", "Public Sector", "ITSM"],
         publicSafeNote: "Professional description with no internal documentation, client data, or confidential information.",
         sections: [
-          { title: "Progression", body: ["In 2025, I worked as an AI Strategy & Digital Workplace Consultant at Madrid Digital, focused on strategy, roadmaps, modernization, and executive documentation.", "I then contributed to Justice through functional analysis and process transformation in public administration, and to UOC through use cases, knowledge/CRM, Salesforce, and functional analysis.", "Since 2026, I have been a Project Manager at ICEX. I coordinate a 30+ person perimeter and work across planning, tracking, deliverables, contingencies, stakeholders, and reporting with Microsoft 365, Jira/JSM, and Power BI."] },
-          { title: "What it proves", body: "Ayesa transferred an established management discipline into technology: structuring work, coordinating people, anticipating issues, maintaining executive focus, and moving deliverables forward." }
+          { title: "Current responsibility", body: ["I am a Project Manager at ICEX. I coordinate a 30+ person perimeter and work across planning, tracking, deliverables, contingencies, stakeholders, and reporting with Microsoft 365, Jira/JSM, and Power BI.", "My Ayesa experience also includes Madrid Digital, focused on strategy, roadmaps, modernization, and executive documentation; Justice, focused on functional analysis and process transformation; and UOC, focused on use cases, knowledge/CRM, Salesforce, and functional analysis."] },
+          { title: "What it proves", body: "My work at Ayesa combines Project Management, team coordination, stakeholder management, executive focus, and knowledge of technology and public-sector environments." }
         ]
       },
       {
@@ -497,11 +501,11 @@ export const portfolioContent = {
         ]
       },
       {
-        slug: "transformia-proof-of-work", title: "TransformIA: applied-AI systems as proof of work", eyebrow: "TECHNOLOGY IN PARALLEL", role: "Design and construction of own systems", sector: "Runtimes, agents, governance, web product, and activation", summary: "Years of technical learning turned into applied-AI products, runtimes, and architectures.",
+        slug: "transformia-proof-of-work", title: "TransformIA: applied-AI systems as proof of work", eyebrow: "TECHNOLOGY IN PARALLEL", role: "Design and construction of own systems", sector: "Runtimes, agents, governance, web product, and activation", summary: "Products, runtimes, and architectures that demonstrate a practical technical foundation in applied AI.",
         proof: ["Exocortex Runtime", "Astrolabio Metamente", "Web Flagship", "Workpod Launcher", "Human-in-the-Loop", "MCP"], tags: ["Applied AI", "Agents", "Governance", "Architecture"],
         publicSafeNote: "Capabilities are described from repository evidence with explicit boundaries; they are not presented as production or customer validation.",
         sections: [
-          { title: "Why it exists", body: "TransformIA is where technical learning becomes systems. Building reveals first-hand what works, what fails, how it should be governed, and what an organization needs to move it into real work." },
+          { title: "Why it exists", body: "TransformIA brings together the systems I design and build to understand first-hand what works, what fails, how it should be governed, and what an organization needs to apply AI to real work." },
           { title: "Architecture and boundaries", body: ["Exocortex Runtime holds governed execution, policy, evidence, and human approval. Astrolabio explores context, authority, and semantic recovery without replacing Runtime authority.", "Web Flagship presents public-safe projections. Workpod Launcher prepares activation, diagnostics, and local evidence. None of these cards claims deployment, production, or customer validation."] }
         ]
       }
