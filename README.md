@@ -2,12 +2,12 @@
 
 Professional portfolio for **Daniel Medina Sánchez**:
 
-AI Transformation, Digital Workplace, Operations Transformation and human-reviewed case studies.
+Project Management, Technology Delivery, Applied AI and human-reviewed case studies.
 
 Final repository:
 
 ```txt
-https://github.com/TransformIA-AI/daniel-medina-portfolio
+https://github.com/danielmedina-lab/daniel-medina-portfolio
 ```
 
 ## Stack
@@ -23,7 +23,7 @@ https://github.com/TransformIA-AI/daniel-medina-portfolio
 ## Install
 
 ```bash
-npm install
+npm ci
 ```
 
 ## Development
@@ -52,8 +52,11 @@ CV PDFs are served from `public/cv/`:
 ```txt
 /cv/daniel-medina-sanchez-cv-es.pdf
 /cv/daniel-medina-sanchez-cv-en.pdf
-/cv/daniel-medina-sanchez-cv-en-no-photo.pdf
 ```
+
+The legacy `/cv/daniel-medina-sanchez-cv-en-no-photo.pdf` route remains as an
+exact compatibility copy of the canonical English CV. It is not presented as a
+separate public option.
 
 The Figma Tier-S prototype source is retained as build reference only:
 

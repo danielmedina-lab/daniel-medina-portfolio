@@ -1,12 +1,12 @@
-# TransformIA AI Lab — Human-in-the-Loop AI Workflows
+# TransformIA — Applied-AI Systems Proof of Work
 
 ## Context
 
-Personal AI Lab and portfolio project focused on practical enterprise AI, automation, Human-in-the-Loop, eWorkers, Digital Workplace and operational governance.
+Technical proof of work focused on governed AI runtimes, agents, evidence, Human-in-the-Loop controls, public-safe product interfaces and activation boundaries.
 
 ## Role
 
-Founder / AI workflow architect / Human-in-the-Loop operator.
+System and product architecture across business, delivery and applied AI.
 
 ## Public-safe Scope
 
@@ -15,7 +15,7 @@ This case does not expose private TransformIA code, proprietary runtime internal
 ## What This Demonstrates
 
 - Human-in-the-Loop design
-- Public-safe AI workflow architecture
-- Recruiter concierge demo
-- AI enablement
-- Documentation and executive delivery
+- Governed AI execution and evidence boundaries
+- Human approval and policy controls
+- Public-safe product projection
+- Activation diagnostics and dry-run handoff

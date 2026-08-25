@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { Footer } from "@/components/footer";
+import { HtmlLang } from "@/components/html-lang";
 import { Nav } from "@/components/nav";
 import { getDictionary, isLocale, locales, type Locale } from "@/lib/i18n";
 
@@ -26,10 +27,7 @@ export async function generateMetadata({ params }: LocaleLayoutProps): Promise<M
   const dictionary = getDictionary(rawLocale);
 
   return {
-    title: {
-      default: dictionary.metadata.title,
-      template: `%s | Daniel Medina Sánchez`
-    },
+    title: dictionary.metadata.title,
     description: dictionary.metadata.description,
     alternates: {
       canonical: `/${rawLocale}`,
@@ -58,6 +56,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
   return (
     <>
+      <HtmlLang locale={locale} />
       <Nav dictionary={dictionary} locale={locale} />
       <main>{children}</main>
       <Footer dictionary={dictionary} locale={locale} />

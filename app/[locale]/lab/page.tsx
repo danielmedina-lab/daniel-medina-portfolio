@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { ConciergeSection, LabSection } from "@/components/home-sections";
+import { CredentialsSection, LabSection, TechnicalStorySection } from "@/components/home-sections";
 import { getDictionary, isLocale, type Locale } from "@/lib/i18n";
 
 type LabPageProps = {
@@ -28,7 +28,8 @@ export default async function LabPage({ params }: LabPageProps) {
   return (
     <>
       <LabSection dictionary={dictionary} locale={locale} />
-      <ConciergeSection dictionary={dictionary} locale={locale} />
+      <TechnicalStorySection dictionary={dictionary} locale={locale} />
+      <CredentialsSection dictionary={dictionary} locale={locale} />
     </>
   );
 }
