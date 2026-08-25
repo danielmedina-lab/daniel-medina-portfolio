@@ -1,24 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, Award, BriefcaseBusiness, Download, Globe2, GraduationCap, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Download, Globe2, TrendingUp, Users } from "lucide-react";
 
 import type { PortfolioDictionary } from "@/content/portfolio";
 import { siteConfig } from "@/lib/constants";
 import { type Locale } from "@/lib/i18n";
 
-const statIcons = [BriefcaseBusiness, Users, Globe2, TrendingUp, GraduationCap];
-
-const latestCertificationByLocale: Record<Locale, { label: string; title: string; detail: string }> = {
-  es: {
-    label: "Nuevo hito certificado",
-    title: "CertiProf SMPC®",
-    detail: "Scrum Master Professional Certification"
-  },
-  en: {
-    label: "New certified milestone",
-    title: "CertiProf SMPC®",
-    detail: "Scrum Master Professional Certification"
-  }
-};
+const statIcons = [BriefcaseBusiness, Users, Globe2, TrendingUp, BriefcaseBusiness];
 
 function FloatingMetric({
   value,
@@ -47,9 +34,7 @@ function FloatingMetric({
   );
 }
 
-function ProfileVisual({ hero, locale }: { hero: PortfolioDictionary["hero"]; locale: Locale }) {
-  const latestCertification = latestCertificationByLocale[locale];
-
+function ProfileVisual({ hero }: { hero: PortfolioDictionary["hero"] }) {
   return (
     <div className="relative mx-auto w-full max-w-[34rem]">
       <div className="surface-grid relative min-h-[28rem] overflow-hidden rounded-2xl border border-line bg-white/60 shadow-soft">
@@ -91,9 +76,9 @@ function ProfileVisual({ hero, locale }: { hero: PortfolioDictionary["hero"]; lo
             value={hero.stats[2].value}
           />
 
-          <div className="flex items-center justify-center gap-2 rounded-lg border border-amber/30 bg-[#FFF8E7] px-4 py-3 text-xs font-bold text-[#7A5C00] shadow-card lg:absolute lg:bottom-3 lg:left-1/2 lg:-translate-x-1/2">
-            <Award aria-hidden="true" size={15} />
-            <span>{hero.profile.credential} + {latestCertification.title}</span>
+          <div className="flex items-center justify-center gap-2 rounded-lg border border-teal/20 bg-mint px-4 py-3 text-xs font-bold text-teal shadow-card lg:absolute lg:bottom-3 lg:left-1/2 lg:-translate-x-1/2">
+            <BriefcaseBusiness aria-hidden="true" size={15} />
+            <span>{hero.stats[4].value} · {hero.stats[4].label}</span>
           </div>
         </div>
       </div>
@@ -103,7 +88,6 @@ function ProfileVisual({ hero, locale }: { hero: PortfolioDictionary["hero"]; lo
 
 export function Hero({ dictionary, locale }: { dictionary: PortfolioDictionary; locale: Locale }) {
   const hero = dictionary.hero;
-  const latestCertification = latestCertificationByLocale[locale];
 
   return (
     <section className="overflow-hidden border-b border-line bg-paper">
@@ -124,17 +108,6 @@ export function Hero({ dictionary, locale }: { dictionary: PortfolioDictionary; 
 
           <p className="mt-6 whitespace-pre-line text-base leading-8 text-slate sm:text-lg">{hero.body}</p>
 
-          <div className="mt-6 rounded-lg border border-amber/30 bg-[#FFF8E7] p-4 text-sm text-[#5E4700] shadow-card">
-            <div className="flex items-start gap-3">
-              <Award aria-hidden="true" className="mt-0.5 shrink-0 text-amber" size={18} />
-              <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#7A5C00]">{latestCertification.label}</p>
-                <p className="mt-1 font-bold text-ink">{latestCertification.title}</p>
-                <p className="mt-1 leading-6">{latestCertification.detail}</p>
-              </div>
-            </div>
-          </div>
-
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-ink px-5 text-sm font-semibold text-white transition hover:bg-carbon"
@@ -146,16 +119,16 @@ export function Hero({ dictionary, locale }: { dictionary: PortfolioDictionary; 
             </a>
             <Link
               className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-ink px-5 text-sm font-semibold text-ink transition hover:border-teal hover:text-teal"
-              href={`/${locale}/#work`}
+              href={`/${locale}/#ayesa`}
             >
-              {hero.viewCases}
+              {hero.viewAyesa}
               <ArrowRight aria-hidden="true" size={16} />
             </Link>
             <a
               className="focus-ring inline-flex min-h-12 items-center justify-center rounded-md border border-teal/25 bg-mint px-5 text-sm font-semibold text-teal transition hover:border-teal"
               href={`mailto:${siteConfig.contactEmail}?subject=Interview%20request%20-%20Daniel%20Medina%20Sanchez`}
             >
-              {hero.bookInterview}
+              {hero.contact}
             </a>
           </div>
 
@@ -167,12 +140,11 @@ export function Hero({ dictionary, locale }: { dictionary: PortfolioDictionary; 
                   {credential}
                 </span>
               ))}
-              <span className="text-sm font-semibold text-teal">{latestCertification.title}</span>
             </div>
           </div>
         </div>
 
-        <ProfileVisual hero={hero} locale={locale} />
+        <ProfileVisual hero={hero} />
       </div>
 
       <div className="bg-ink text-white">

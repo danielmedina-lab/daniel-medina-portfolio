@@ -3,14 +3,12 @@ import {
   ArrowRight,
   Bot,
   BriefcaseBusiness,
-  Building2,
   CheckCircle2,
   Cpu,
   GraduationCap,
   Layers3
 } from "lucide-react";
 
-import { CVDownloadButtons } from "@/components/cv-download-buttons";
 import { RecruiterConcierge } from "@/components/recruiter-concierge";
 import { SectionHeading } from "@/components/section-heading";
 import type { PortfolioDictionary } from "@/content/portfolio";
@@ -61,53 +59,6 @@ export function ValueAreasSection({ dictionary }: LocalizedSectionProps) {
   );
 }
 
-function EditorialCard({
-  body,
-  category,
-  cta,
-  footer,
-  href,
-  tags,
-  title
-}: {
-  body: string;
-  category?: string;
-  cta?: string;
-  footer: string;
-  href: string;
-  tags: readonly string[];
-  title: string;
-}) {
-  return (
-    <Link
-      className="focus-ring group flex h-full flex-col rounded-lg border border-line bg-white p-6 shadow-card transition hover:-translate-y-1 hover:border-teal hover:shadow-soft"
-      href={href}
-    >
-      {category ? (
-        <p className="text-xs font-bold uppercase tracking-[0.16em] text-teal">{category}</p>
-      ) : null}
-      <h3 className="mt-4 text-xl font-bold tracking-tight text-ink">{title}</h3>
-      <p className="mt-3 text-sm leading-6 text-slate">{body}</p>
-      <div className="mt-5 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <span className="rounded bg-mist px-2.5 py-1 text-xs font-medium text-slate" key={tag}>
-            {tag}
-          </span>
-        ))}
-      </div>
-      <div className="mt-auto border-t border-line pt-5">
-        <p className="text-sm font-semibold text-ink">{footer}</p>
-        {cta ? (
-          <p className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-teal">
-            {cta}
-            <ArrowRight aria-hidden="true" size={15} />
-          </p>
-        ) : null}
-      </div>
-    </Link>
-  );
-}
-
 export function ExperienceSection({ dictionary, locale }: LocalizedSectionProps) {
   const content = dictionary.proof;
 
@@ -120,60 +71,103 @@ export function ExperienceSection({ dictionary, locale }: LocalizedSectionProps)
           title={content.title}
           body={content.body}
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          {content.professionalCards.map((card) => (
-            <EditorialCard
-              body={card.body}
-              category={card.category}
-              cta={card.cta}
-              footer={card.footer}
-              href={`/${locale}/case/${card.slug}`}
-              key={card.slug}
-              tags={card.tags}
-              title={card.title}
-            />
-          ))}
+        <div className="mt-10 rounded-lg border border-line bg-white p-6 shadow-card">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate">{content.careerLabel}</p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {content.careerSteps.map((step, index) => (
+              <div className="relative rounded-md bg-mist p-4" key={step.title}>
+                <p className="text-xs font-bold text-teal">{step.period}</p>
+                <h3 className="mt-2 text-lg font-bold text-ink">{step.title}</h3>
+                <p className="mt-1 text-sm leading-6 text-slate">{step.detail}</p>
+                {index < content.careerSteps.length - 1 ? (
+                  <ArrowRight aria-hidden="true" className="absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 text-teal lg:block" size={18} />
+                ) : null}
+              </div>
+            ))}
+          </div>
         </div>
 
+        <article className="mt-12 overflow-hidden rounded-xl border border-line bg-white shadow-soft" id="ayesa">
+          <div className="border-b border-line bg-ink p-6 text-white sm:p-8">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal">{content.ayesa.eyebrow}</p>
+                <h3 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">{content.ayesa.title}</h3>
+              </div>
+              <p className="shrink-0 text-sm font-semibold text-white/65">{content.ayesa.period}</p>
+            </div>
+          </div>
+          <div className="p-6 sm:p-8">
+            <ol className="relative ml-2 border-l-2 border-teal/25 sm:ml-4">
+              {content.ayesa.items.map((item, index) => (
+                <li className="relative pb-8 pl-7 last:pb-0 sm:grid sm:grid-cols-[9rem_1fr] sm:gap-6 sm:pl-9" key={`${item.period}-${item.client}`}>
+                  <span
+                    className={[
+                      "absolute -left-[0.56rem] top-1 h-4 w-4 rounded-full border-4 border-white",
+                      index === content.ayesa.items.length - 1 ? "bg-teal ring-4 ring-teal/15" : "bg-white ring-2 ring-teal"
+                    ].join(" ")}
+                  />
+                  <p className="text-xs font-black uppercase tracking-[0.12em] text-teal">{item.period}</p>
+                  <div className="mt-2 sm:mt-0">
+                    <h4 className="text-lg font-bold text-ink">{item.client}</h4>
+                    <p className="mt-1 text-sm font-semibold text-ink">{item.role}</p>
+                    <p className="mt-2 text-sm leading-6 text-slate">{item.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-8 border-t border-line pt-6">
+              <p className="max-w-4xl text-base leading-7 text-slate">{content.ayesa.supporting}</p>
+              <Link
+                className="focus-ring mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-ink px-4 text-sm font-semibold text-white transition hover:bg-carbon"
+                href={`/${locale}/case/${content.ayesa.slug}`}
+              >
+                {content.ayesa.cta}
+                <ArrowRight aria-hidden="true" size={15} />
+              </Link>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );
 }
 
 export function FeaturedCasesSection({ dictionary, locale }: LocalizedSectionProps) {
+  const content = dictionary.konecta;
+
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:px-8">
-        {dictionary.featuredCases.map((caseBlock) => (
-          <article
-            className="grid gap-8 rounded-lg border border-line bg-paper p-6 shadow-card lg:grid-cols-[1.05fr_0.95fr] lg:p-8"
-            key={caseBlock.slug}
-          >
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal">{caseBlock.eyebrow}</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-ink sm:text-4xl">{caseBlock.title}</h2>
-              <div className="mt-5 space-y-4 text-base leading-7 text-slate">
-                {caseBlock.body.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal">{content.eyebrow}</p>
+        <h2 className="mt-3 max-w-4xl text-3xl font-bold tracking-tight text-ink sm:text-4xl">{content.title}</h2>
+        <div className="mt-8 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {content.metrics.map((metric) => (
+            <div className="rounded-lg bg-ink p-5 text-white shadow-card sm:p-6" key={metric.label}>
+              <p className="text-3xl font-black tracking-tight sm:text-4xl">{metric.value}</p>
+              <p className="mt-2 text-xs font-bold uppercase tracking-[0.12em] text-white/55">{metric.label}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 grid gap-8 rounded-lg border border-line bg-paper p-6 lg:grid-cols-[1.1fr_0.9fr] lg:p-8">
+          <div>
+            <p className="text-base leading-8 text-slate">{content.body}</p>
+            <Link
+              className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-ink px-4 text-sm font-semibold text-white transition hover:bg-carbon"
+              href={`/${locale}/case/${content.slug}`}
+            >
+              {content.cta}
+              <ArrowRight aria-hidden="true" size={15} />
+            </Link>
+          </div>
+          <div className="grid content-start gap-3 sm:grid-cols-2 lg:grid-cols-1">
+            {content.details.map((detail) => (
+              <div className="rounded-md border border-line bg-white px-4 py-3 text-sm font-semibold leading-6 text-ink" key={detail}>
+                {detail}
               </div>
-              <Link
-                className="focus-ring mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-ink px-4 text-sm font-semibold text-white transition hover:bg-carbon"
-                href={`/${locale}/case/${caseBlock.slug}`}
-              >
-                {caseBlock.cta}
-                <ArrowRight aria-hidden="true" size={15} />
-              </Link>
-            </div>
-            <div className="grid content-start gap-3">
-              {caseBlock.highlights.map((highlight) => (
-                <div className="rounded-md border border-line bg-white px-4 py-3 text-sm font-semibold leading-6 text-ink" key={highlight}>
-                  {highlight}
-                </div>
-              ))}
-            </div>
-          </article>
-        ))}
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -184,8 +178,8 @@ export function LabSection({ dictionary, locale }: LocalizedSectionProps) {
 
   return (
     <section className="bg-ink py-20 text-white" id="lab">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-        <div>
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal">{content.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
             {content.title}
@@ -193,31 +187,41 @@ export function LabSection({ dictionary, locale }: LocalizedSectionProps) {
           <p className="mt-5 whitespace-pre-line text-base leading-7 text-white/70">
             {content.body}
           </p>
-          <Link
-            className="focus-ring mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/20 px-4 text-sm font-semibold text-white transition hover:border-teal hover:text-teal"
-            href={`/${locale}/case/${content.slug}`}
-          >
-            {content.cta}
-            <ArrowRight aria-hidden="true" size={15} />
-          </Link>
         </div>
 
-        <div className="grid gap-3">
-          <p className="text-sm font-bold text-white">{content.methodTitle}</p>
-          {content.method.map((step, index) => (
-            <div className="grid grid-cols-[2.5rem_1fr] gap-4 rounded-md border border-white/10 bg-white/[0.06] p-4" key={step.title}>
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-teal text-sm font-black">
-                {index + 1}
+        <p className="mt-10 text-sm font-bold text-white">{content.projectsTitle}</p>
+        <div className="mt-4 grid gap-4 lg:grid-cols-2">
+          {content.projects.map((project) => (
+            <a
+              className="focus-ring group rounded-lg border border-white/10 bg-white/[0.06] p-5 transition hover:border-teal/70 hover:bg-white/[0.09]"
+              href={project.href}
+              key={project.title}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-teal">{project.status}</p>
+                </div>
+                <ArrowRight aria-hidden="true" className="mt-1 shrink-0 text-white/35 transition group-hover:text-teal" size={17} />
               </div>
-              <div>
-                <p className="text-sm font-semibold text-white">{step.title}</p>
-                <p className="mt-1 text-xs leading-5 text-white/55">
-                  {step.body}
-                </p>
+              <p className="mt-4 text-sm leading-6 text-white/65">{project.body}</p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span className="rounded bg-white/10 px-2.5 py-1 text-xs font-medium text-white/65" key={tag}>{tag}</span>
+                ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
+        <Link
+          className="focus-ring mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-white/20 px-4 text-sm font-semibold text-white transition hover:border-teal hover:text-teal"
+          href={`/${locale}/case/${content.slug}`}
+        >
+          {content.cta}
+          <ArrowRight aria-hidden="true" size={15} />
+        </Link>
       </div>
     </section>
   );
@@ -256,50 +260,52 @@ export function CredentialsSection({ dictionary }: LocalizedSectionProps) {
           title={content.title}
           body={content.body}
         />
-        <div className="mt-10 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-          <article className="rounded-lg border border-amber/30 bg-[#FFFBEF] p-6">
-            <GraduationCap aria-hidden="true" className="text-amber" size={30} />
-            <h3 className="mt-5 text-2xl font-bold text-ink">{content.cardTitle}</h3>
-            <p className="mt-3 text-sm leading-6 text-slate">
-              {content.cardBody}
-            </p>
-          </article>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {content.items.map((item) => (
-              <div className="rounded-lg border border-line bg-paper p-5" key={item}>
-                <CheckCircle2 aria-hidden="true" className="text-teal" size={19} />
-                <p className="mt-4 text-sm font-semibold leading-6 text-ink">{item}</p>
-              </div>
-            ))}
-          </div>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {content.items.map((item, index) => (
+            <article
+              className={[
+                "rounded-lg border p-5",
+                index < 2 ? "border-amber/30 bg-[#FFFBEF]" : "border-line bg-paper"
+              ].join(" ")}
+              key={item.title}
+            >
+              {index < 2 ? (
+                <GraduationCap aria-hidden="true" className="text-amber" size={24} />
+              ) : (
+                <CheckCircle2 aria-hidden="true" className="text-teal" size={21} />
+              )}
+              <h3 className="mt-4 text-lg font-bold text-ink">{item.title}</h3>
+              <p className="mt-1 text-sm font-semibold text-teal">{item.subtitle}</p>
+              <p className="mt-3 text-sm leading-6 text-slate">{item.body}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
-export function OperationsSection({ dictionary }: LocalizedSectionProps) {
-  const content = dictionary.operations;
+export function TechnicalStorySection({ dictionary }: LocalizedSectionProps) {
+  const content = dictionary.technicalStory;
 
   return (
     <section className="bg-mist py-20">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow={content.eyebrow}
           title={content.title}
           body={content.body}
         />
-        <div className="grid gap-4 sm:grid-cols-3">
-          {content.items.map((item, index) => {
-            const Icon = [BriefcaseBusiness, Building2, Cpu][index] ?? BriefcaseBusiness;
-            return (
-              <article className="rounded-lg border border-line bg-white p-6 shadow-card" key={item.title}>
-                <Icon aria-hidden="true" className="text-teal" size={22} />
-                <h3 className="mt-5 text-lg font-bold text-ink">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate">{item.body}</p>
-              </article>
-            );
-          })}
+        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-7">
+          {content.timeline.map((milestone, index) => (
+            <div className="relative rounded-lg border border-line bg-white p-4 shadow-card" key={milestone}>
+              <p className="text-xs font-black text-teal">{String(index + 1).padStart(2, "0")}</p>
+              <p className="mt-3 text-sm font-semibold leading-6 text-ink">{milestone}</p>
+              {index < content.timeline.length - 1 ? (
+                <ArrowRight aria-hidden="true" className="absolute -right-3 top-1/2 z-10 hidden -translate-y-1/2 text-teal lg:block" size={16} />
+              ) : null}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -310,15 +316,12 @@ export function CVHubSection({ dictionary }: LocalizedSectionProps) {
   return (
     <section className="bg-paper py-20" id="cv">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeading
-            eyebrow={dictionary.cvHub.eyebrow}
-            title={dictionary.cvHub.title}
-            body={dictionary.cvHub.body}
-          />
-          <CVDownloadButtons compact files={dictionary.cvHub.files} />
-        </div>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <SectionHeading
+          eyebrow={dictionary.cvHub.eyebrow}
+          title={dictionary.cvHub.title}
+          body={dictionary.cvHub.body}
+        />
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {dictionary.cvHub.files.map((cvFile) => (
             <a
               className="focus-ring rounded-lg border border-line bg-white p-6 shadow-card transition hover:border-teal hover:shadow-soft"

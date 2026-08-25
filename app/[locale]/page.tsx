@@ -7,7 +7,7 @@ import {
   ExperienceSection,
   FeaturedCasesSection,
   LabSection,
-  OperationsSection,
+  TechnicalStorySection,
   ValueAreasSection
 } from "@/components/home-sections";
 import { Hero } from "@/components/hero";
@@ -42,8 +42,8 @@ export default async function LocalizedHomePage({ params }: HomePageProps) {
       <ExperienceSection dictionary={dictionary} locale={locale} />
       <FeaturedCasesSection dictionary={dictionary} locale={locale} />
       <LabSection dictionary={dictionary} locale={locale} />
+      <TechnicalStorySection dictionary={dictionary} locale={locale} />
       <CredentialsSection dictionary={dictionary} locale={locale} />
-      <OperationsSection dictionary={dictionary} locale={locale} />
       <CVHubSection dictionary={dictionary} locale={locale} />
       <ContactSection dictionary={dictionary} locale={locale} />
     </>

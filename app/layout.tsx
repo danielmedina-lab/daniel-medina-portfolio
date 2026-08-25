@@ -6,18 +6,16 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
-  title: {
-    default: "Daniel Medina Sánchez | Transformación con IA y operaciones",
-    template: `%s | ${siteConfig.name}`
-  },
+  title: "Daniel Medina Sánchez | Project Manager · Technology Delivery · Applied AI",
   description:
-    "Portfolio profesional de Daniel Medina Sánchez: operaciones, Digital Workplace, consultoría tecnológica y transición sólida hacia IA aplicada.",
+    "Project Manager con 15+ años de liderazgo, 560+ personas, 4 países y P&L >12M€. Ayesa, sector público, ITSM, Digital Workplace y portfolio técnico de IA aplicada.",
   applicationName: "Daniel Medina Portfolio",
   authors: [{ name: siteConfig.name }],
   keywords: [
-    "AI Transformation",
+    "Project Manager",
+    "Technology Delivery",
+    "Applied AI",
     "Digital Workplace",
-    "Operations Transformation",
     "Human-in-the-Loop",
     "ITSM",
     "CS50AI",
@@ -26,17 +24,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteConfig.siteUrl,
-    title: "Daniel Medina Sánchez | Transformación con IA y operaciones",
+    title: "Daniel Medina Sánchez | Project Manager · Technology Delivery · Applied AI",
     description:
-      "Portfolio profesional de Daniel Medina Sánchez: operaciones, Digital Workplace, consultoría tecnológica y transición sólida hacia IA aplicada.",
+      "Project Manager con 15+ años de liderazgo, 560+ personas, 4 países y P&L >12M€. Ayesa, sector público, ITSM, Digital Workplace y portfolio técnico de IA aplicada.",
     siteName: "Daniel Medina Portfolio",
     locale: "es_ES"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Medina Sánchez | Transformación con IA y operaciones",
+    title: "Daniel Medina Sánchez | Project Manager · Technology Delivery · Applied AI",
     description:
-      "Portfolio profesional de Daniel Medina Sánchez: operaciones, Digital Workplace, consultoría tecnológica y transición sólida hacia IA aplicada."
+      "Project Manager con 15+ años de liderazgo, 560+ personas, 4 países y P&L >12M€. Ayesa, sector público, ITSM, Digital Workplace y portfolio técnico de IA aplicada."
   },
   robots: {
     index: true,

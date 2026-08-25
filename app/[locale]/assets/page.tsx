@@ -33,7 +33,7 @@ export default async function AssetsPage({ params }: AssetsPageProps) {
         <h1 className="mt-4 text-4xl font-black tracking-tight text-ink sm:text-5xl">{content.heading}</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate">{content.body}</p>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
           {dictionary.cvHub.files.map((cvFile) => (
             <a
               className="focus-ring rounded-lg border border-line bg-white p-6 shadow-card transition hover:border-teal"
