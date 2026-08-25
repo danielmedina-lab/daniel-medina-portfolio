@@ -54,7 +54,7 @@ export const portfolioContent = {
       headline:
         "Dirijo proyectos complejos donde negocio, personas y tecnología tienen que funcionar a la vez.",
       body:
-        "Actualmente soy Project Manager en ICEX dentro de Ayesa, después de trabajar en iniciativas para Madrid Digital, Justicia y UOC. Aporto más de 15 años de experiencia gestionando equipos, clientes, operaciones y resultados, con responsabilidad sobre organizaciones de 560+ personas, cuatro países y P&L superior a 12 M€/año.\n\nA esa base de gestión sumo una profundidad tecnológica poco habitual en un perfil de Project Management: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, datos, programación e IA aplicada. Mi trabajo está en conectar estrategia, delivery y ejecución hasta que las cosas funcionan.",
+        "Soy Project Manager en ICEX dentro de Ayesa. Mi recorrido en la compañía incluye también iniciativas para Madrid Digital, Justicia y UOC. Aporto más de 15 años de experiencia gestionando equipos, clientes, operaciones y resultados, con responsabilidad sobre organizaciones de 560+ personas, cuatro países y P&L superior a 12 M€/año.\n\nA esa base de gestión sumo una profundidad tecnológica poco habitual en un perfil de Project Management: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, datos, programación e IA aplicada. Mi trabajo está en conectar estrategia, delivery y ejecución hasta que las cosas funcionan.",
       downloadCv: "Descargar CV",
       viewAyesa: "Ver evolución en Ayesa",
       contact: "Solicitar entrevista",
@@ -212,9 +212,9 @@ export const portfolioContent = {
     },
     technicalStory: {
       eyebrow: "TECNOLOGÍA EN PARALELO",
-      title: "La tecnología nunca fue una reconversión",
+      title: "Profundidad técnica para dirigir mejor",
       body:
-        "La informática ha formado parte de mi vida desde niño. Empecé con Spectrum y PCs 386/486, montando y configurando ordenadores con mi padre, y desde entonces nunca dejé de aprender ni de trabajar con tecnología.\n\nDurante mi carrera profesional esa capacidad convivió con operaciones y management: Excel y Microsoft Office a nivel avanzado, sistemas corporativos, datos, CRM, automatización y herramientas de productividad. Desde 2020/2021 profundicé de forma deliberada en inteligencia artificial, Machine Learning, Computer Science y desarrollo de software.\n\nHoy trabajo con Microsoft 365, Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM y herramientas de IA. TransformIA es la expresión práctica de esa base técnica: sistemas y productos que diseño y construyo para aprender haciendo y entender la tecnología desde dentro.",
+        "Trabajo con Microsoft 365, Excel avanzado, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM y herramientas de IA. Esa profundidad técnica no sustituye mi función de Project Manager: me permite entender mejor lo que dirigimos, cuestionar decisiones y trabajar de tú a tú con equipos técnicos.\n\nLa informática forma parte de mi vida desde niño, desde los Spectrum y 386/486 que montaba y configuraba con mi padre. Desde 2020/2021 profundicé deliberadamente en IA, Machine Learning, Computer Science y desarrollo de software, hasta convertir esa inquietud en sistemas reales mediante TransformIA.",
       capabilities: [
         { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Excel avanzado", "Power BI", "Azure", "Microsoft Foundry"] },
         { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
@@ -362,7 +362,7 @@ export const portfolioContent = {
     hero: {
       badge: "PROJECT MANAGER · TECHNOLOGY DELIVERY · APPLIED AI", name: "Daniel Medina Sánchez",
       headline: "I lead complex projects where business, people, and technology must work together.",
-      body: "I am currently a Project Manager at ICEX within Ayesa, after working on initiatives for Madrid Digital, Justice, and UOC. I bring more than 15 years of experience managing teams, clients, operations, and business results, including responsibility for organizations of 560+ people across four countries and P&L above €12M/year.\n\nI combine that management foundation with unusual technical depth for a Project Management profile: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, data, programming, and applied AI. My job is to connect strategy, delivery, and execution until things work.",
+      body: "I am a Project Manager at ICEX within Ayesa. My work with the company also includes initiatives for Madrid Digital, Justice, and UOC. I bring more than 15 years of experience managing teams, clients, operations, and business results, including responsibility for organizations of 560+ people across four countries and P&L above €12M/year.\n\nI combine that management foundation with unusual technical depth for a Project Management profile: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, data, programming, and applied AI. My job is to connect strategy, delivery, and execution until things work.",
       downloadCv: "Download CV", viewAyesa: "View Ayesa progression", contact: "Request interview", credentialsLabel: "CAREER", credentials: sharedCareer, primaryCvHref: cvRoutes.en,
       profile: { label: "Current profile", name: "Daniel Medina", role: "Project Manager · Technology Delivery · Applied AI", chips: ["Project Management", "Technology Delivery", "Applied AI"] },
       stats: [{ value: "15+", label: "years" }, { value: "560+", label: "people" }, { value: "4", label: "countries" }, { value: "€12M+", label: "P&L" }, { value: "Project Manager", label: "ICEX / Ayesa · present" }]
@@ -418,8 +418,8 @@ export const portfolioContent = {
       cta: "View TransformIA in detail", slug: "transformia-proof-of-work"
     },
     technicalStory: {
-      eyebrow: "TECHNOLOGY IN PARALLEL", title: "Technology was never a career conversion",
-      body: "Computing has been part of my life since childhood. I started with Spectrum and 386/486 PCs, building and configuring computers with my father, and I have continued learning and working with technology ever since.\n\nThroughout my professional career, that capability coexisted with operations and management: advanced Excel and Microsoft Office, corporate systems, data, CRM, automation, and productivity tools. From 2020/2021, I deepened my work in artificial intelligence, Machine Learning, Computer Science, and software development.\n\nToday I work with Microsoft 365, Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM, and AI tools. TransformIA is the practical expression of that technical foundation: systems and products I design and build to learn by doing and understand technology from the inside.",
+      eyebrow: "TECHNOLOGY IN PARALLEL", title: "Technical depth for stronger project leadership",
+      body: "I work with Microsoft 365, advanced Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM, and AI tools. That technical depth does not replace my role as a Project Manager; it helps me understand what we are delivering, challenge decisions, and work directly with technical teams.\n\nComputing has been part of my life since childhood, starting with the Spectrum and 386/486 PCs I built and configured with my father. Since 2020/2021, I have deliberately deepened my work in AI, Machine Learning, Computer Science, and software development, turning that drive into real systems through TransformIA.",
       capabilities: [
         { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Advanced Excel", "Power BI", "Azure", "Microsoft Foundry"] },
         { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
