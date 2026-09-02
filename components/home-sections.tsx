@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
   ArrowRight,
+  BadgeCheck,
   Bot,
   BriefcaseBusiness,
   Building2,
-  CheckCircle2,
   Cpu,
   GraduationCap,
   Layers3
@@ -253,7 +253,7 @@ export function CredentialsSection({ dictionary }: LocalizedSectionProps) {
   const content = dictionary.credentialsSection;
 
   return (
-    <section className="border-y border-line bg-white py-20" id="credentials">
+    <section className="border-y border-[#0A6ED1]/15 bg-[linear-gradient(180deg,#F7FBFF_0%,#FFFFFF_100%)] py-20" id="credentials">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
@@ -261,22 +261,33 @@ export function CredentialsSection({ dictionary }: LocalizedSectionProps) {
           title={content.title}
           body={content.body}
         />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-8 flex w-fit items-center gap-2 rounded-full border border-[#0A6ED1]/20 bg-[#EEF6FD] px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-[#0A6ED1]">
+          <BadgeCheck aria-hidden="true" size={16} />
+          {content.badge}
+        </div>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
           {content.items.map((item, index) => (
             <article
               className={[
-                "rounded-lg border p-5",
-                index < 2 ? "border-amber/30 bg-[#FFFBEF]" : "border-line bg-paper"
+                "rounded-xl border p-6 shadow-card",
+                index < 2
+                  ? "lg:col-span-3 border-[#0A6ED1]/35 bg-[#EEF6FD]"
+                  : "lg:col-span-2 border-line bg-white"
               ].join(" ")}
               key={item.title}
             >
               {index < 2 ? (
-                <GraduationCap aria-hidden="true" className="text-amber" size={24} />
+                <div className="flex items-center justify-between gap-4">
+                  <BadgeCheck aria-hidden="true" className="text-[#0A6ED1]" size={28} />
+                  <span className="rounded-full bg-[#0A6ED1] px-3 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-white">
+                    {content.assessmentBadge}
+                  </span>
+                </div>
               ) : (
-                <CheckCircle2 aria-hidden="true" className="text-teal" size={21} />
+                <GraduationCap aria-hidden="true" className="text-teal" size={23} />
               )}
-              <h3 className="mt-4 text-lg font-bold text-ink">{item.title}</h3>
-              <p className="mt-1 text-sm font-semibold text-teal">{item.subtitle}</p>
+              <h3 className={["mt-4 font-bold text-ink", index < 2 ? "text-xl" : "text-lg"].join(" ")}>{item.title}</h3>
+              <p className={["mt-1 text-sm font-semibold", index < 2 ? "text-[#0A6ED1]" : "text-teal"].join(" ")}>{item.subtitle}</p>
               <p className="mt-3 text-sm leading-6 text-slate">{item.body}</p>
             </article>
           ))}

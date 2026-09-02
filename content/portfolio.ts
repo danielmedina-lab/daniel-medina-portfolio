@@ -19,22 +19,22 @@ export type CaseStudy = {
   sections: readonly { title: string; body: SectionBody }[];
 };
 
-const sharedCareer = ["Transcom", "Uniglobal", "Konecta", "Ayesa", "TransformIA"] as const;
+const sharedCareer = ["SAP S/4HANA Cloud", "SAP Generative AI", "HarvardX CS50x", "CS50AI", "SMPC®", "MBA"] as const;
 
 export const portfolioContent = {
   es: {
     metadata: {
-      title: "Daniel Medina Sánchez | Project Manager · Technology Delivery · Applied AI",
+      title: "Daniel Medina Sánchez | SAP Implementation · Generative AI · Technology Delivery",
       description:
-        "Project Manager con 15+ años de liderazgo, 560+ personas, 4 países y P&L >12M€. Ayesa, sector público, ITSM, Digital Workplace y portfolio técnico de IA aplicada.",
+        "Consultor SAP certificado en S/4HANA Cloud Public Edition y SAP Generative AI, con 15+ años de liderazgo, Project Management, 560+ personas, 4 países y P&L >12M€.",
       openGraphLocale: "es_ES"
     },
     nav: {
       identityName: "Daniel Medina",
-      identityRole: "Project Manager · Technology · Applied AI",
+      identityRole: "SAP Implementation · Business AI · Delivery",
       homeAria: "Inicio de Daniel Medina Sánchez",
       links: [
-        { href: "/#work", label: "Perfil" },
+        { href: "/#credentials", label: "Certificaciones" },
         { href: "/#experience", label: "Experiencia" },
         { href: "/#lab", label: "TransformIA" },
         { href: "/#cv", label: "CV" },
@@ -45,74 +45,74 @@ export const portfolioContent = {
     },
     footer: {
       body:
-        "Project Manager con experiencia ejecutiva en operaciones y delivery, trayectoria en consultoría tecnológica y profundidad técnica demostrable en IA aplicada. Casos redactados sin datos confidenciales ni documentación interna.",
+        "Consultor SAP y Project Manager con experiencia ejecutiva en operaciones y delivery, dos certificaciones SAP prácticas y profundidad técnica demostrable en IA aplicada. Casos redactados sin datos confidenciales ni documentación interna.",
       links: { privacy: "Privacidad", assets: "Activos", designSystem: "Sistema visual", github: "GitHub" }
     },
     hero: {
-      badge: "PROJECT MANAGER · TECHNOLOGY DELIVERY · APPLIED AI",
+      badge: "SAP CERTIFIED · IMPLEMENTATION · GENERATIVE AI · DELIVERY",
       name: "Daniel Medina Sánchez",
       headline:
-        "Dirijo proyectos complejos donde negocio, personas y tecnología tienen que funcionar a la vez.",
+        "Conecto la implementación SAP, la IA generativa y el delivery con 15+ años de liderazgo real.",
       body:
-        "Soy Project Manager en ICEX dentro de Ayesa. Mi recorrido en la compañía incluye también iniciativas para Madrid Digital, Justicia y UOC. Aporto más de 15 años de experiencia gestionando equipos, clientes, operaciones y resultados, con responsabilidad sobre organizaciones de 560+ personas, cuatro países y P&L superior a 12 M€/año.\n\nA esa base de gestión sumo una profundidad tecnológica poco habitual en un perfil de Project Management: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, datos, programación e IA aplicada. Mi trabajo está en conectar estrategia, delivery y ejecución hasta que las cosas funcionan.",
+        "En Ayesa he evolucionado desde consultoría, Digital Workplace y Project Management hacia un proyecto SAP. Esa transición se apoya en dos certificaciones prácticas consecutivas: SAP S/4HANA Cloud Public Edition Implementation Consultant (85 %) y SAP Generative AI Developer (100 %).\n\nAporto más de 15 años dirigiendo equipos, clientes, operaciones y resultados —hasta 560+ personas, cuatro países y P&L superior a 12 M€/año— y los traduzco hoy en implementación, gobierno, stakeholders y ejecución tecnológica.",
       downloadCv: "Descargar CV",
-      viewAyesa: "Ver evolución en Ayesa",
+      viewAyesa: "Ver evolución SAP en Ayesa",
       contact: "Solicitar entrevista",
-      credentialsLabel: "TRAYECTORIA",
+      credentialsLabel: "CREDENTIAL STACK",
       credentials: sharedCareer,
       primaryCvHref: cvRoutes.es,
       profile: {
         label: "Perfil actual",
         name: "Daniel Medina",
-        role: "Project Manager · Technology Delivery · Applied AI",
-        chips: ["Project Management", "Technology Delivery", "Applied AI"]
+        role: "SAP Implementation & Generative AI Consultant",
+        chips: ["S/4HANA Cloud", "SAP Business AI", "Technology Delivery"]
       },
       stats: [
         { value: "15+", label: "años" },
         { value: "560+", label: "personas" },
         { value: "4", label: "países" },
         { value: "€12M+", label: "P&L" },
-        { value: "Project Manager", label: "ICEX / Ayesa · actualidad" }
+        { value: "2× SAP", label: "certificaciones · 85 % / 100 %" }
       ]
     },
     valueAreas: {
-      eyebrow: "PROJECT MANAGEMENT",
-      title: "Gestión, delivery y tecnología en un mismo perfil",
+      eyebrow: "SAP · BUSINESS AI · DELIVERY",
+      title: "Implementación SAP con criterio ejecutivo y profundidad técnica",
       body:
-        "Gestiono proyectos con una visión completa del problema: objetivos, personas, recursos, riesgos, stakeholders, tecnología y resultado de negocio. Mi experiencia previa en operaciones de gran escala me aporta disciplina de ejecución; mi recorrido tecnológico me permite entender con profundidad qué estamos construyendo y trabajar de tú a tú con equipos técnicos.",
+        "Combino la ontología y la práctica de SAP con una base de gestión poco habitual: objetivos, personas, recursos, riesgos, stakeholders, tecnología y resultado de negocio. La experiencia en operaciones de gran escala aporta disciplina de ejecución; la formación técnica permite trabajar de tú a tú con equipos funcionales y técnicos.",
       items: [
         {
-          title: "DELIVERY",
-          body: "Planificación · hitos · recursos · dependencias · riesgos · contingencias · seguimiento · entregables",
-          tags: ["Planificación", "Dependencias", "Riesgos", "Entregables"]
+          title: "SAP IMPLEMENTATION",
+          body: "S/4HANA Cloud Public Edition · Central Business Configuration · scoping · configuración · migración · testing",
+          tags: ["S/4HANA Cloud", "CBC", "Migración", "Testing"]
         },
         {
-          title: "GOVERNANCE & STAKEHOLDERS",
-          body: "Presupuesto · prioridades · reporting ejecutivo · cliente · negociación · toma de decisiones",
-          tags: ["Presupuesto", "Stakeholders", "Reporting", "Decisiones"]
+          title: "SAP BUSINESS AI",
+          body: "AI Launchpad · Generative AI Hub · Prompt Editor · JSON estructurado · hardening · comparación de modelos",
+          tags: ["AI Launchpad", "Generative AI Hub", "Prompts", "Modelos"]
         },
         {
-          title: "TECHNOLOGY",
-          body: "Digital Workplace · ITSM · Microsoft 365 · Jira/JSM · Salesforce · Azure · datos · automatización · IA aplicada",
-          tags: ["Microsoft 365", "Salesforce", "Azure", "IA aplicada"]
+          title: "DELIVERY & GOVERNANCE",
+          body: "Planificación · hitos · recursos · RAID · dependencias · stakeholders · reporting ejecutivo · adopción",
+          tags: ["Project Management", "RAID", "Stakeholders", "Adopción"]
         }
       ]
     },
     proof: {
       eyebrow: "EXPERIENCIA",
-      title: "Project Management con base ejecutiva y tecnológica",
+      title: "De la escala ejecutiva a la implementación SAP",
       body:
-        "Actualmente lidero proyectos tecnológicos con una experiencia acumulada que abarca operaciones, Service Delivery, Business Management, consultoría y transformación.",
+        "Actualmente trabajo en un proyecto SAP dentro de Ayesa, tras una progresión que abarca operaciones, Service Delivery, Business Management, consultoría, Project Management y transformación tecnológica.",
       careerLabel: "Experiencia acumulada",
       careerSteps: [
         { period: "2009–2016", title: "Transcom", detail: "Operaciones · coordinación" },
         { period: "2016–2023", title: "Uniglobal", detail: "Service Delivery · Business Management" },
         { period: "2023–2025", title: "Konecta", detail: "Business Manager · escala ejecutiva" },
-        { period: "2025–actualidad", title: "Ayesa", detail: "Technology Consulting → Project Management" }
+        { period: "2025–actualidad", title: "Ayesa", detail: "Consulting → PM → SAP" }
       ],
       ayesa: {
-        eyebrow: "AYESA · PROJECT MANAGEMENT & TECHNOLOGY CONSULTING",
-        title: "Project Management en ICEX y experiencia tecnológica en sector público",
+        eyebrow: "AYESA · TECHNOLOGY CONSULTING · PROJECT MANAGEMENT · SAP",
+        title: "Evolución interna hacia implementación SAP y Business AI",
         period: "ago. 2025 · actualidad",
         items: [
           {
@@ -134,15 +134,22 @@ export const portfolioContent = {
             detail: "Casos de uso · knowledge/CRM · Salesforce · análisis funcional"
           },
           {
-            period: "2026 → ACTUALIDAD",
+            period: "2026",
             client: "ICEX",
             role: "PROJECT MANAGER",
             detail:
               "30+ personas · planificación · seguimiento · entregables · contingencias · stakeholders · Jira/JSM · Microsoft 365 · Power BI"
+          },
+          {
+            period: "2026 → ACTUALIDAD",
+            client: "Proyecto SAP",
+            role: "IMPLEMENTATION & BUSINESS AI",
+            detail:
+              "SAP S/4HANA Cloud Public Edition · CBC · usuarios/roles · migración · testing · AI Launchpad · Generative AI Hub"
           }
         ],
         supporting:
-          "Actualmente gestiono proyectos en ICEX dentro de Ayesa, con responsabilidad sobre planificación, seguimiento, entregables, contingencias, stakeholders, reporting y coordinación de equipos. Mi recorrido previo por Madrid Digital, Justicia y UOC amplió esa experiencia hacia transformación, Digital Workplace, sector público e IA aplicada.",
+          "Mi recorrido en Ayesa conecta consultoría estratégica, Digital Workplace, Project Management y SAP. Tras ICEX y los proyectos de Madrid Digital, Justicia y UOC, la evolución al proyecto SAP se ha acelerado con práctica real en sistemas y dos certificaciones oficiales obtenidas de forma consecutiva.",
         cta: "Ver caso Ayesa",
         slug: "ayesa-digital-workplace-sector-publico-icex"
       }
@@ -214,13 +221,13 @@ export const portfolioContent = {
       eyebrow: "TECNOLOGÍA EN PARALELO",
       title: "Profundidad técnica para dirigir mejor",
       body:
-        "Trabajo con Microsoft 365, Excel avanzado, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM y herramientas de IA. Esa profundidad técnica no sustituye mi función de Project Manager: me permite entender mejor lo que dirigimos, cuestionar decisiones y trabajar de tú a tú con equipos técnicos.\n\nLa informática forma parte de mi vida desde niño, desde los Spectrum y 386/486 que montaba y configuraba con mi padre. Desde 2020/2021 profundicé deliberadamente en IA, Machine Learning, Computer Science y desarrollo de software, hasta convertir esa inquietud en sistemas reales mediante TransformIA.",
+        "Trabajo con SAP S/4HANA Cloud Public Edition, Central Business Configuration, SAP AI Launchpad, Generative AI Hub, Microsoft 365, Jira/JSM, Salesforce, Azure, Python, SQL, APIs, Git/GitHub y Power BI. Esta profundidad no sustituye la función de delivery: permite comprender la implementación, cuestionar decisiones y conectar negocio, funcional y técnico.\n\nLa informática forma parte de mi vida desde niño. Desde 2020/2021 profundicé deliberadamente en IA, Machine Learning, Computer Science y software; en 2026 esa trayectoria converge con SAP mediante dos certificaciones prácticas y la evolución del proyecto en Ayesa.",
       capabilities: [
-        { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Excel avanzado", "Power BI", "Azure", "Microsoft Foundry"] },
-        { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
-        { title: "CRM & BUSINESS SYSTEMS", items: ["Salesforce", "Automatización de procesos", "Reporting", "Sistemas de conocimiento"] },
+        { title: "SAP IMPLEMENTATION", items: ["S/4HANA Cloud", "CBC", "Scoping", "Configuración", "Migración", "Testing"] },
+        { title: "SAP BUSINESS AI", items: ["AI Launchpad", "Generative AI Hub", "Prompt Editor", "JSON", "Model comparison"] },
+        { title: "PROJECT & SERVICE", items: ["Project Management", "Jira/JSM", "ITSM", "Digital Workplace", "Power BI"] },
         { title: "SOFTWARE & DATA", items: ["Python", "C", "R", "SQL", "JavaScript / TypeScript", "React / Next.js", "APIs", "Git / GitHub"] },
-        { title: "APPLIED AI", items: ["Agentes", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Automatización"] }
+        { title: "APPLIED AI", items: ["Agentes", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Azure"] }
       ]
     },
     conciergeSection: {
@@ -231,34 +238,37 @@ export const portfolioContent = {
       badge: "Información pública · revisión humana"
     },
     credentialsSection: {
-      eyebrow: "FORMACIÓN Y CREDENCIALES",
-      title: "Formación que refuerza una base técnica práctica",
+      eyebrow: "CERTIFICACIONES EN PRIMER PLANO",
+      title: "Dos SAP, dos Harvard, Scrum y MBA: una base completa",
+      badge: "2 certificaciones SAP · 85 % + 100 %",
+      assessmentBadge: "Assessment práctico",
       body:
-        "Combino aprendizaje continuo con construcción real. HarvardX CS50x y CS50AI reforzaron fundamentos que ya aplico en software e IA; SMPC® formaliza la disciplina Agile y Scrum que acompaña mi experiencia de delivery.",
+        "Las dos certificaciones SAP validan ejecución práctica en implementación cloud y Business AI. HarvardX aporta fundamento informático, SMPC® disciplina Agile y el MBA una lectura directiva de negocio.",
       items: [
+        { title: "SAP S/4HANA Cloud Public Edition", subtitle: "Implementation Consultant · C_S4CPB_2602 · 85 %", body: "Assessment práctico. CBC, scoping, estructuras organizativas, configuración, autorizaciones, migración y testing. Obtenida el 30 ago. 2026." },
+        { title: "SAP Generative AI Developer", subtitle: "C_AIG_2604 · 100 %", body: "Assessment práctico. AI Launchpad, Generative AI Hub, Prompt Editor, salidas JSON, hardening y comparación de modelos. Obtenida el 1 sep. 2026." },
         { title: "HarvardX CS50x", subtitle: "Introduction to Computer Science", body: "Computer Science, Python, SQL, algoritmos y estructuras de datos." },
         { title: "HarvardX CS50AI", subtitle: "Introduction to Artificial Intelligence with Python", body: "Búsqueda, conocimiento, incertidumbre, optimización, machine learning, redes neuronales y lenguaje." },
         { title: "CertiProf SMPC®", subtitle: "Scrum Master Professional Certification", body: "Scrum, facilitación de equipos, trabajo iterativo, gestión de impedimentos y mejora continua." },
-        { title: "Machine Learning & Artificial Intelligence", subtitle: "200 h", body: "Formación aplicada completada en 2023." },
-        { title: "Azure AI / Microsoft Foundry", subtitle: "Formación continua", body: "Aprendizaje continuo en aplicaciones de IA, agentes y arquitectura." }
+        { title: "MBA · ENEB", subtitle: "Business Administration and Management · 9,58/10", body: "Estrategia, finanzas, operaciones, personas y dirección de negocio." }
       ]
     },
     cvHub: {
       eyebrow: "CV",
       title: "Una identidad profesional. Dos idiomas.",
       body:
-        "Project Manager con experiencia ejecutiva en operaciones y delivery, trayectoria en consultoría tecnológica y profundidad técnica en IA aplicada.",
+        "Consultor SAP y Project Manager con dos certificaciones SAP prácticas, experiencia ejecutiva en operaciones y delivery, y profundidad técnica en IA aplicada.",
       downloadPdf: "Descargar PDF",
       files: [
-        { id: "es", href: cvRoutes.es, label: "Descargar CV Español", shortLabel: "CV Español", language: "Español", audience: "Project Management · Technology Delivery · Transformación Digital · IA aplicada" },
-        { id: "en", href: cvRoutes.en, label: "Download English CV", shortLabel: "CV English", language: "English", audience: "Project Management · Technology Delivery · Digital Transformation · Applied AI" }
+        { id: "es", href: cvRoutes.es, label: "Descargar CV Español", shortLabel: "CV Español", language: "Español", audience: "SAP Implementation · SAP Business AI · Technology Delivery · Project Management" },
+        { id: "en", href: cvRoutes.en, label: "Download English CV", shortLabel: "CV English", language: "English", audience: "SAP Implementation · SAP Business AI · Technology Delivery · Project Management" }
       ]
     },
     contact: {
       eyebrow: "CONTACTO PROFESIONAL",
-      title: "Si necesitas a alguien que pueda entrar, ordenar y hacer avanzar un proyecto, hablemos.",
+      title: "Si necesitas conectar SAP, negocio, delivery e IA aplicada, hablemos.",
       body:
-        "Busco posiciones de Project Manager, Technical PM, Technology Delivery y transformación tecnológica/IA. Preferencia por remoto, pero abierto a híbrido o presencial en Madrid cuando el proyecto y la oportunidad lo justifican.",
+        "Busco posiciones de SAP Consultant, SAP Project Manager, SAP Business AI, Technical PM y Technology Delivery. Preferencia por remoto, con apertura a híbrido o presencial en Madrid cuando el proyecto lo justifica.",
       requestInterview: "Solicitar entrevista",
       linkedin: "LinkedIn",
       cvHub: "Descargar CV"
@@ -291,31 +301,32 @@ export const portfolioContent = {
     recruiter: {
       headerTitle: "Guía de encaje", headerSubtitle: "Respuestas desde contenido público", statusChip: "Revisión humana", boundaryLabel: "Límite:",
       boundaryText: "no envía mensajes, agenda reuniones ni toma decisiones.",
-      initialMessage: "Pregunta por experiencia, Project Management, Ayesa, Konecta o base técnica. Responderé solo con información pública de esta web.",
-      suggestedQuestions: ["¿Qué escala ha gestionado?", "¿Cuál es su experiencia como Project Manager?", "¿Qué aporta su base técnica?", "¿Cómo trabaja con stakeholders?"],
+      initialMessage: "Pregunta por SAP, certificaciones, experiencia, Project Management, Ayesa, Konecta o base técnica. Responderé solo con información pública de esta web.",
+      suggestedQuestions: ["¿Qué experiencia SAP tiene?", "¿Qué certificaciones ha obtenido?", "¿Qué escala ha gestionado?", "¿Cuál es su encaje profesional?"],
       inputPlaceholder: "Escribe una pregunta", sendLabel: "Enviar", roleFit: "Encaje orientativo", fitScoreSuffix: "/100", confidence: "Confianza", pending: "pendiente",
       recommendedCv: "CV recomendado", askFirst: "Haz una pregunta", download: "Descargar CV", approvalStatus: "Contacto", requestInterview: "Solicitar entrevista",
       approvalDefault: "La solicitud abre el canal de contacto; Daniel decide y responde personalmente.", pendingApproval: "Solicitud preparada. Utiliza el enlace de contacto para enviarla.",
       answers: {
+        sap: { content: "Actualmente trabaja en un proyecto SAP dentro de Ayesa y ha validado la transición con dos assessments prácticos consecutivos: SAP S/4HANA Cloud Public Edition Implementation Consultant (85 %) y SAP Generative AI Developer (100 %). Combina configuración e implementación cloud con SAP Business AI y experiencia senior de delivery.", confidence: "high", fitScore: 98, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["S/4HANA Cloud", "C_S4CPB_2602 · 85 %", "C_AIG_2604 · 100 %", "Ayesa"] },
         operations: { content: "La experiencia operativa prueba seniority: 560+ personas, 4 países, P&L superior a 12 M€ y 8 líneas de servicio. Esa escala se traduce en presupuesto, recursos, riesgos, stakeholders y delivery multistream.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["560+ personas", "4 países", ">12M€ P&L", "8 líneas"] },
-        publicSector: { content: "Actualmente es Project Manager en ICEX dentro de Ayesa y coordina un perímetro de 30+ personas. Su experiencia en la compañía incluye también Madrid Digital, Justicia y UOC.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Ayesa", "ICEX", "30+ personas", "Jira/JSM"] },
-        technical: { content: "Su base técnica combina CS50x, CS50AI, Machine Learning, Python, Azure y construcción de sistemas en TransformIA. La tecnología es una trayectoria paralela y demostrable.", confidence: "high", fitScore: 94, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["CS50x", "CS50AI", "Azure", "TransformIA"] },
+        publicSector: { content: "En Ayesa ha pasado por Madrid Digital, Justicia, UOC e ICEX, donde coordinó un perímetro de 30+ personas, antes de evolucionar al proyecto SAP actual.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Ayesa", "ICEX", "30+ personas", "Proyecto SAP"] },
+        technical: { content: "Su base técnica combina SAP S/4HANA Cloud, SAP Business AI, CS50x, CS50AI, Machine Learning, Python, Azure y construcción de sistemas en TransformIA.", confidence: "high", fitScore: 96, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["SAP", "CS50x", "CS50AI", "TransformIA"] },
         hitl: { content: "Los sistemas de TransformIA mantienen políticas, evidencia y revisión humana como límites de gobierno. El portfolio no presenta esa implementación como producción.", confidence: "high", fitScore: 91, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Policy", "Evidence", "Human-in-the-Loop"] },
-        ai: { content: "El encaje principal es Project Manager o Technical PM en contextos de Technology Delivery, transformación digital e IA aplicada. Aporta gestión ejecutiva previa y criterio técnico propio.", confidence: "high", fitScore: 97, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Project Manager", "Technology Delivery", "Applied AI"] },
-        fallback: { content: "Daniel es Project Manager con experiencia ejecutiva en delivery y una base técnica real en IA aplicada. Pregunta por Ayesa, Konecta, stakeholders o TransformIA para concretar.", confidence: "medium", fitScore: 88, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["Ayesa", "Konecta", "TransformIA"] }
+        ai: { content: "El encaje principal es SAP Consultant, SAP Project Manager, SAP Business AI o Technical PM. Aporta dos certificaciones SAP prácticas, gestión ejecutiva previa y criterio técnico propio.", confidence: "high", fitScore: 98, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["SAP Consultant", "SAP Business AI", "Project Manager"] },
+        fallback: { content: "Daniel es consultor SAP y Project Manager con experiencia ejecutiva en delivery, dos certificaciones SAP prácticas y una base técnica real en IA aplicada.", confidence: "medium", fitScore: 92, cvHref: cvRoutes.es, cvLabel: "CV Español", evidence: ["SAP", "Ayesa", "Konecta", "TransformIA"] }
       }
     },
     cases: [
       {
-        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: Project Management en ICEX y consultoría tecnológica", eyebrow: "PROJECT MANAGEMENT · TECHNOLOGY CONSULTING",
-        role: "Project Manager", sector: "Sector público · Digital Workplace · ITSM · transformación tecnológica",
-        summary: "Project Manager en ICEX, con experiencia previa en consultoría estratégica de IA para Madrid Digital, Justicia y UOC.",
-        proof: ["Madrid Digital", "Justicia", "UOC", "ICEX", "30+ personas", "Jira/JSM", "Microsoft 365", "Power BI"],
-        tags: ["Project Management", "Technology Delivery", "Public Sector", "ITSM"],
+        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: evolución de consultoría y Project Management hacia SAP", eyebrow: "SAP · PROJECT MANAGEMENT · TECHNOLOGY CONSULTING",
+        role: "SAP Implementation & Business AI · Project Manager", sector: "SAP S/4HANA Cloud Public Edition · SAP Business AI · Technology Delivery",
+        summary: "Evolución interna desde Madrid Digital, Justicia, UOC e ICEX hacia un proyecto SAP, respaldada por dos certificaciones prácticas consecutivas.",
+        proof: ["Proyecto SAP", "C_S4CPB_2602 · 85 %", "C_AIG_2604 · 100 %", "ICEX", "30+ personas", "SAP Business AI"],
+        tags: ["SAP S/4HANA Cloud", "SAP Business AI", "Project Management", "Technology Delivery"],
         publicSafeNote: "Descripción profesional sin documentación interna, datos de cliente ni información confidencial.",
         sections: [
-          { title: "Responsabilidad actual", body: ["Soy Project Manager en ICEX. Coordino un perímetro de 30+ personas y trabajo sobre planificación, seguimiento, entregables, contingencias, stakeholders y reporting con Microsoft 365, Jira/JSM y Power BI.", "Mi experiencia en Ayesa incluye Madrid Digital, con estrategia, roadmaps, modernización y documentación ejecutiva; Justicia, con análisis funcional y transformación de procesos; y UOC, con casos de uso, knowledge/CRM, Salesforce y análisis funcional."] },
-          { title: "Qué demuestra", body: "Mi trabajo en Ayesa combina Project Management, coordinación de personas, gestión de stakeholders, foco ejecutivo y conocimiento de entornos tecnológicos y de sector público." }
+          { title: "Evolución actual", body: ["Actualmente trabajo en un proyecto SAP, con foco en SAP S/4HANA Cloud Public Edition y SAP Business AI. La transición se ha reforzado con práctica en sistemas y dos certificaciones oficiales obtenidas de forma consecutiva.", "La trayectoria previa en Ayesa incluye Project Management en ICEX sobre un perímetro de 30+ personas y consultoría para Madrid Digital, Justicia y UOC."] },
+          { title: "Qué demuestra", body: "La evolución combina implementación SAP, Project Management, coordinación de personas, gestión de stakeholders, foco ejecutivo y profundidad técnica en IA generativa." }
         ]
       },
       {
@@ -345,56 +356,57 @@ export const portfolioContent = {
   },
   en: {
     metadata: {
-      title: "Daniel Medina Sánchez | Project Manager · Technology Delivery · Applied AI",
+      title: "Daniel Medina Sánchez | SAP Implementation · Generative AI · Technology Delivery",
       description:
-        "Project Manager with 15+ years of leadership experience, 560+ people across 4 countries, and P&L above €12M. Ayesa, public sector, ITSM, Digital Workplace, and an applied-AI technical portfolio.",
+        "SAP-certified consultant in S/4HANA Cloud Public Edition and SAP Generative AI, with 15+ years of leadership, Project Management, 560+ people across 4 countries, and P&L above €12M.",
       openGraphLocale: "en_GB"
     },
     nav: {
-      identityName: "Daniel Medina", identityRole: "Project Manager · Technology · Applied AI", homeAria: "Daniel Medina Sánchez home",
-      links: [{ href: "/#work", label: "Profile" }, { href: "/#experience", label: "Experience" }, { href: "/#lab", label: "TransformIA" }, { href: "/#cv", label: "CV" }, { href: "/#contact", label: "Contact" }],
+      identityName: "Daniel Medina", identityRole: "SAP Implementation · Business AI · Delivery", homeAria: "Daniel Medina Sánchez home",
+      links: [{ href: "/#credentials", label: "Certifications" }, { href: "/#experience", label: "Experience" }, { href: "/#lab", label: "TransformIA" }, { href: "/#cv", label: "CV" }, { href: "/#contact", label: "Contact" }],
       bookInterview: "Request interview", cv: "CV"
     },
     footer: {
-      body: "Project Manager with executive-scale operations and delivery experience, a technology consulting track record, and demonstrable technical depth in applied AI. Cases exclude confidential data and internal documentation.",
+      body: "SAP consultant and Project Manager with executive-scale operations and delivery experience, two practical SAP certifications, and demonstrable technical depth in applied AI. Cases exclude confidential data and internal documentation.",
       links: { privacy: "Privacy", assets: "Assets", designSystem: "Design system", github: "GitHub" }
     },
     hero: {
-      badge: "PROJECT MANAGER · TECHNOLOGY DELIVERY · APPLIED AI", name: "Daniel Medina Sánchez",
-      headline: "I lead complex projects where business, people, and technology must work together.",
-      body: "I am a Project Manager at ICEX within Ayesa. My work with the company also includes initiatives for Madrid Digital, Justice, and UOC. I bring more than 15 years of experience managing teams, clients, operations, and business results, including responsibility for organizations of 560+ people across four countries and P&L above €12M/year.\n\nI combine that management foundation with unusual technical depth for a Project Management profile: Digital Workplace, ITSM, Microsoft 365, Jira/JSM, Salesforce, Azure, data, programming, and applied AI. My job is to connect strategy, delivery, and execution until things work.",
-      downloadCv: "Download CV", viewAyesa: "View Ayesa progression", contact: "Request interview", credentialsLabel: "CAREER", credentials: sharedCareer, primaryCvHref: cvRoutes.en,
-      profile: { label: "Current profile", name: "Daniel Medina", role: "Project Manager · Technology Delivery · Applied AI", chips: ["Project Management", "Technology Delivery", "Applied AI"] },
-      stats: [{ value: "15+", label: "years" }, { value: "560+", label: "people" }, { value: "4", label: "countries" }, { value: "€12M+", label: "P&L" }, { value: "Project Manager", label: "ICEX / Ayesa · present" }]
+      badge: "SAP CERTIFIED · IMPLEMENTATION · GENERATIVE AI · DELIVERY", name: "Daniel Medina Sánchez",
+      headline: "I connect SAP implementation, generative AI, and delivery with 15+ years of proven leadership.",
+      body: "At Ayesa, I have progressed from consulting, Digital Workplace, and Project Management into an SAP project. That transition is backed by two consecutive practical certifications: SAP S/4HANA Cloud Public Edition Implementation Consultant (85%) and SAP Generative AI Developer (100%).\n\nI bring 15+ years leading teams, clients, operations, and business outcomes — up to 560+ people across four countries and P&L above €12M/year — and apply that experience to implementation, governance, stakeholders, and technology execution.",
+      downloadCv: "Download CV", viewAyesa: "View SAP progression at Ayesa", contact: "Request interview", credentialsLabel: "CREDENTIAL STACK", credentials: sharedCareer, primaryCvHref: cvRoutes.en,
+      profile: { label: "Current profile", name: "Daniel Medina", role: "SAP Implementation & Generative AI Consultant", chips: ["S/4HANA Cloud", "SAP Business AI", "Technology Delivery"] },
+      stats: [{ value: "15+", label: "years" }, { value: "560+", label: "people" }, { value: "4", label: "countries" }, { value: "€12M+", label: "P&L" }, { value: "2× SAP", label: "certifications · 85% / 100%" }]
     },
     valueAreas: {
-      eyebrow: "PROJECT MANAGEMENT", title: "Management, delivery, and technology in one profile",
-      body: "I manage projects with a complete view of the problem: objectives, people, resources, risks, stakeholders, technology, and business outcomes. My experience in large-scale operations brings execution discipline; my technical background gives me a deeper understanding of what we are building and lets me work directly with technical teams.",
+      eyebrow: "SAP · BUSINESS AI · DELIVERY", title: "SAP implementation with executive judgment and technical depth",
+      body: "I combine SAP ontology and hands-on practice with an uncommon management foundation: objectives, people, resources, risks, stakeholders, technology, and business outcomes. Large-scale operations bring execution discipline; technical training supports direct work across functional and engineering teams.",
       items: [
-        { title: "DELIVERY", body: "Planning · milestones · resources · dependencies · risks · contingencies · tracking · deliverables", tags: ["Planning", "Dependencies", "Risks", "Deliverables"] },
-        { title: "GOVERNANCE & STAKEHOLDERS", body: "Budget · priorities · executive reporting · client · negotiation · decision-making", tags: ["Budget", "Stakeholders", "Reporting", "Decisions"] },
-        { title: "TECHNOLOGY", body: "Digital Workplace · ITSM · Microsoft 365 · Jira/JSM · Salesforce · Azure · data · automation · applied AI", tags: ["Microsoft 365", "Salesforce", "Azure", "Applied AI"] }
+        { title: "SAP IMPLEMENTATION", body: "S/4HANA Cloud Public Edition · Central Business Configuration · scoping · configuration · migration · testing", tags: ["S/4HANA Cloud", "CBC", "Migration", "Testing"] },
+        { title: "SAP BUSINESS AI", body: "AI Launchpad · Generative AI Hub · Prompt Editor · structured JSON · hardening · model comparison", tags: ["AI Launchpad", "Generative AI Hub", "Prompts", "Models"] },
+        { title: "DELIVERY & GOVERNANCE", body: "Planning · milestones · resources · RAID · dependencies · stakeholders · executive reporting · adoption", tags: ["Project Management", "RAID", "Stakeholders", "Adoption"] }
       ]
     },
     proof: {
-      eyebrow: "EXPERIENCE", title: "Project Management backed by executive and technical depth",
-      body: "I currently lead technology projects with experience spanning operations, Service Delivery, Business Management, consulting, and transformation.",
+      eyebrow: "EXPERIENCE", title: "From executive scale to SAP implementation",
+      body: "I currently work on an SAP project within Ayesa, following a progression across operations, Service Delivery, Business Management, consulting, Project Management, and technology transformation.",
       careerLabel: "Experience at a glance",
       careerSteps: [
         { period: "2009–2016", title: "Transcom", detail: "Operations · coordination" },
         { period: "2016–2023", title: "Uniglobal", detail: "Service Delivery · Business Management" },
         { period: "2023–2025", title: "Konecta", detail: "Business Manager · executive scale" },
-        { period: "2025–present", title: "Ayesa", detail: "Technology Consulting → Project Management" }
+        { period: "2025–present", title: "Ayesa", detail: "Consulting → PM → SAP" }
       ],
       ayesa: {
-        eyebrow: "AYESA · PROJECT MANAGEMENT & TECHNOLOGY CONSULTING", title: "Project Management at ICEX and public-sector technology experience", period: "Aug 2025 · present",
+        eyebrow: "AYESA · TECHNOLOGY CONSULTING · PROJECT MANAGEMENT · SAP", title: "Internal progression into SAP implementation and Business AI", period: "Aug 2025 · present",
         items: [
           { period: "2025", client: "Madrid Digital", role: "AI Strategy & Digital Workplace Consultant", detail: "Strategy · roadmaps · workplace modernization · executive documentation" },
           { period: "2025", client: "Justice", role: "AI Strategy Consultant", detail: "Functional analysis · process transformation · public administration" },
           { period: "2025", client: "UOC", role: "AI Strategy Consultant", detail: "Use cases · knowledge/CRM · Salesforce · functional analysis" },
-          { period: "2026 → PRESENT", client: "ICEX", role: "PROJECT MANAGER", detail: "30+ people · planning · tracking · deliverables · contingencies · stakeholders · Jira/JSM · Microsoft 365 · Power BI" }
+          { period: "2026", client: "ICEX", role: "PROJECT MANAGER", detail: "30+ people · planning · tracking · deliverables · contingencies · stakeholders · Jira/JSM · Microsoft 365 · Power BI" },
+          { period: "2026 → PRESENT", client: "SAP Project", role: "IMPLEMENTATION & BUSINESS AI", detail: "SAP S/4HANA Cloud Public Edition · CBC · users/roles · migration · testing · AI Launchpad · Generative AI Hub" }
         ],
-        supporting: "I currently manage projects at ICEX within Ayesa, with responsibility for planning, tracking, deliverables, contingencies, stakeholders, reporting, and team coordination. My earlier work across Madrid Digital, Justice, and UOC broadened that experience across transformation, Digital Workplace, the public sector, and applied AI.",
+        supporting: "My journey at Ayesa connects strategic consulting, Digital Workplace, Project Management, and SAP. Following ICEX and initiatives for Madrid Digital, Justice, and UOC, the move into the SAP project has accelerated through hands-on system practice and two consecutive official certifications.",
         cta: "View Ayesa case", slug: "ayesa-digital-workplace-sector-publico-icex"
       }
     },
@@ -419,13 +431,13 @@ export const portfolioContent = {
     },
     technicalStory: {
       eyebrow: "TECHNOLOGY IN PARALLEL", title: "Technical depth for stronger project leadership",
-      body: "I work with Microsoft 365, advanced Excel, Salesforce, Azure, Python, C, R, SQL, JavaScript/TypeScript, APIs, Git/GitHub, Power BI, Jira/JSM, and AI tools. That technical depth does not replace my role as a Project Manager; it helps me understand what we are delivering, challenge decisions, and work directly with technical teams.\n\nComputing has been part of my life since childhood, starting with the Spectrum and 386/486 PCs I built and configured with my father. Since 2020/2021, I have deliberately deepened my work in AI, Machine Learning, Computer Science, and software development, turning that drive into real systems through TransformIA.",
+      body: "I work with SAP S/4HANA Cloud Public Edition, Central Business Configuration, SAP AI Launchpad, Generative AI Hub, Microsoft 365, Jira/JSM, Salesforce, Azure, Python, SQL, APIs, Git/GitHub, and Power BI. This depth supports delivery by connecting business, functional, and technical perspectives.\n\nComputing has been part of my life since childhood. Since 2020/2021, I have deliberately deepened my work in AI, Machine Learning, Computer Science, and software; in 2026, that track converged with SAP through two practical certifications and my progression at Ayesa.",
       capabilities: [
-        { title: "MICROSOFT & ENTERPRISE", items: ["Microsoft 365", "Advanced Excel", "Power BI", "Azure", "Microsoft Foundry"] },
-        { title: "PROJECT & SERVICE", items: ["Jira", "Atlassian JSM", "ITSM", "Digital Workplace", "Nexthink"] },
-        { title: "CRM & BUSINESS SYSTEMS", items: ["Salesforce", "Process automation", "Reporting", "Knowledge systems"] },
+        { title: "SAP IMPLEMENTATION", items: ["S/4HANA Cloud", "CBC", "Scoping", "Configuration", "Migration", "Testing"] },
+        { title: "SAP BUSINESS AI", items: ["AI Launchpad", "Generative AI Hub", "Prompt Editor", "JSON", "Model comparison"] },
+        { title: "PROJECT & SERVICE", items: ["Project Management", "Jira/JSM", "ITSM", "Digital Workplace", "Power BI"] },
         { title: "SOFTWARE & DATA", items: ["Python", "C", "R", "SQL", "JavaScript / TypeScript", "React / Next.js", "APIs", "Git / GitHub"] },
-        { title: "APPLIED AI", items: ["Agents", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Automation"] }
+        { title: "APPLIED AI", items: ["Agents", "RAG / Search", "MCP", "Human-in-the-Loop", "AI governance", "Policy / evidence", "Azure"] }
       ]
     },
     conciergeSection: {
@@ -433,27 +445,30 @@ export const portfolioContent = {
       body: "An interactive guide based only on public portfolio information. It summarizes experience, scale, and technical grounding without sending messages or taking action.", badge: "Public information · human review"
     },
     credentialsSection: {
-      eyebrow: "EDUCATION & CREDENTIALS", title: "Learning that strengthens a practical technical foundation",
-      body: "I combine continuous learning with real construction. HarvardX CS50x and CS50AI strengthened foundations I already apply in software and AI; SMPC® formalizes the Agile and Scrum discipline that supports my delivery experience.",
+      eyebrow: "CERTIFICATIONS UP FRONT", title: "Two SAP, two Harvard, Scrum, and an MBA",
+      badge: "2 SAP certifications · 85% + 100%",
+      assessmentBadge: "System-based",
+      body: "The two SAP credentials validate hands-on execution in cloud implementation and Business AI. HarvardX provides the computer-science foundation, SMPC® the Agile discipline, and the MBA an executive business perspective.",
       items: [
+        { title: "SAP S/4HANA Cloud Public Edition", subtitle: "Implementation Consultant · C_S4CPB_2602 · 85%", body: "Practical assessment. CBC, scoping, organizational structures, configuration, authorizations, migration, and testing. Earned 30 Aug 2026." },
+        { title: "SAP Generative AI Developer", subtitle: "C_AIG_2604 · 100%", body: "Practical assessment. AI Launchpad, Generative AI Hub, Prompt Editor, JSON output, hardening, and model comparison. Earned 1 Sep 2026." },
         { title: "HarvardX CS50x", subtitle: "Introduction to Computer Science", body: "Computer Science, Python, SQL, algorithms, and data structures." },
         { title: "HarvardX CS50AI", subtitle: "Introduction to Artificial Intelligence with Python", body: "Search, knowledge, uncertainty, optimization, machine learning, neural networks, and language." },
         { title: "CertiProf SMPC®", subtitle: "Scrum Master Professional Certification", body: "Scrum, team facilitation, iterative work, impediment management, and continuous improvement." },
-        { title: "Machine Learning & Artificial Intelligence", subtitle: "200 hours", body: "Applied training completed in 2023." },
-        { title: "Azure AI / Microsoft Foundry", subtitle: "Continuous learning", body: "Ongoing training in AI applications, agents, and architecture." }
+        { title: "MBA · ENEB", subtitle: "Business Administration and Management · 9.58/10", body: "Strategy, finance, operations, people, and business leadership." }
       ]
     },
     cvHub: {
       eyebrow: "CV", title: "One professional identity. Two languages.",
-      body: "Project Manager with executive operations and delivery experience, a technology consulting track record, and technical depth in applied AI.", downloadPdf: "Download PDF",
+      body: "SAP consultant and Project Manager with two practical SAP certifications, executive operations and delivery experience, and technical depth in applied AI.", downloadPdf: "Download PDF",
       files: [
-        { id: "es", href: cvRoutes.es, label: "Descargar CV Español", shortLabel: "CV Español", language: "Spanish", audience: "Project Management · Technology Delivery · Digital Transformation · Applied AI" },
-        { id: "en", href: cvRoutes.en, label: "Download English CV", shortLabel: "CV English", language: "English", audience: "Project Management · Technology Delivery · Digital Transformation · Applied AI" }
+        { id: "es", href: cvRoutes.es, label: "Descargar CV Español", shortLabel: "CV Español", language: "Spanish", audience: "SAP Implementation · SAP Business AI · Technology Delivery · Project Management" },
+        { id: "en", href: cvRoutes.en, label: "Download English CV", shortLabel: "CV English", language: "English", audience: "SAP Implementation · SAP Business AI · Technology Delivery · Project Management" }
       ]
     },
     contact: {
-      eyebrow: "PROFESSIONAL CONTACT", title: "If you need someone who can step in, create order, and move a project forward, let's talk.",
-      body: "I am looking for Project Manager, Technical PM, Technology Delivery, and technology/AI transformation roles. I prefer remote work, while remaining open to hybrid or on-site opportunities in Madrid when the project and opportunity justify it.",
+      eyebrow: "PROFESSIONAL CONTACT", title: "If you need someone who can connect SAP, business, delivery, and applied AI, let's talk.",
+      body: "I am targeting SAP Consultant, SAP Project Manager, SAP Business AI, Technical PM, and Technology Delivery roles. I prefer remote work, while remaining open to hybrid or on-site opportunities in Madrid when the project justifies it.",
       requestInterview: "Request interview", linkedin: "LinkedIn", cvHub: "Download CV"
     },
     casePage: { back: "Back to experience", role: "Role", sector: "Scope", boundary: "Public boundary", evidence: "Key evidence", nextStep: "Next step", nextStepBody: "Download the CV or return to experience to review the full professional profile." },
@@ -467,28 +482,29 @@ export const portfolioContent = {
     },
     recruiter: {
       headerTitle: "Fit guide", headerSubtitle: "Answers from public content", statusChip: "Human review", boundaryLabel: "Boundary:", boundaryText: "does not send messages, schedule meetings, or make decisions.",
-      initialMessage: "Ask about experience, Project Management, Ayesa, Konecta, or technical depth. I will answer only from public information on this website.",
-      suggestedQuestions: ["What scale has he managed?", "What is his Project Management experience?", "What does his technical depth add?", "How does he work with stakeholders?"],
+      initialMessage: "Ask about SAP, certifications, experience, Project Management, Ayesa, Konecta, or technical depth. I will answer only from public information on this website.",
+      suggestedQuestions: ["What SAP experience does he have?", "Which certifications has he earned?", "What scale has he managed?", "What roles is he suited for?"],
       inputPlaceholder: "Type a question", sendLabel: "Send", roleFit: "Indicative fit", fitScoreSuffix: "/100", confidence: "Confidence", pending: "pending", recommendedCv: "Recommended CV", askFirst: "Ask a question", download: "Download CV", approvalStatus: "Contact", requestInterview: "Request interview",
       approvalDefault: "The request opens the contact channel; Daniel decides and replies personally.", pendingApproval: "Request prepared. Use the contact link to send it.",
       answers: {
+        sap: { content: "He currently works on an SAP project within Ayesa and has validated the transition through two consecutive practical assessments: SAP S/4HANA Cloud Public Edition Implementation Consultant (85%) and SAP Generative AI Developer (100%). He combines cloud implementation and configuration with SAP Business AI and senior delivery experience.", confidence: "high", fitScore: 98, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["S/4HANA Cloud", "C_S4CPB_2602 · 85%", "C_AIG_2604 · 100%", "Ayesa"] },
         operations: { content: "The operations background proves seniority: 560+ people, four countries, P&L above €12M, and eight service lines. That scale translates into budget, resources, risks, stakeholders, and multi-workstream delivery.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["560+ people", "4 countries", ">€12M P&L", "8 lines"] },
-        publicSector: { content: "He is currently a Project Manager at ICEX within Ayesa, coordinating a 30+ person perimeter. His experience with the company also includes Madrid Digital, Justice, and UOC.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Ayesa", "ICEX", "30+ people", "Jira/JSM"] },
-        technical: { content: "His technical grounding combines CS50x, CS50AI, Machine Learning, Python, Azure, and hands-on systems work through TransformIA. Technology is a parallel, demonstrable track.", confidence: "high", fitScore: 94, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["CS50x", "CS50AI", "Azure", "TransformIA"] },
+        publicSector: { content: "At Ayesa, he has worked across Madrid Digital, Justice, UOC, and ICEX — where he coordinated a 30+ person scope — before progressing into the current SAP project.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Ayesa", "ICEX", "30+ people", "SAP Project"] },
+        technical: { content: "His technical grounding combines SAP S/4HANA Cloud, SAP Business AI, CS50x, CS50AI, Machine Learning, Python, Azure, and systems built through TransformIA.", confidence: "high", fitScore: 96, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["SAP", "CS50x", "CS50AI", "TransformIA"] },
         hitl: { content: "TransformIA systems use policy, evidence, and human review as governance boundaries. The portfolio does not present this work as production.", confidence: "high", fitScore: 91, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Policy", "Evidence", "Human-in-the-Loop"] },
-        ai: { content: "The primary fit is Project Manager or Technical PM in Technology Delivery, digital transformation, and applied-AI contexts. He brings prior executive management and informed technical judgment.", confidence: "high", fitScore: 97, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Project Manager", "Technology Delivery", "Applied AI"] },
-        fallback: { content: "Daniel is a Project Manager with executive delivery experience and real technical grounding in applied AI. Ask about Ayesa, Konecta, stakeholders, or TransformIA for specifics.", confidence: "medium", fitScore: 88, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["Ayesa", "Konecta", "TransformIA"] }
+        ai: { content: "The primary fit is SAP Consultant, SAP Project Manager, SAP Business AI, or Technical PM. He brings two practical SAP certifications, prior executive management, and informed technical judgment.", confidence: "high", fitScore: 98, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["SAP Consultant", "SAP Business AI", "Project Manager"] },
+        fallback: { content: "Daniel is an SAP consultant and Project Manager with executive delivery experience, two practical SAP certifications, and real technical grounding in applied AI.", confidence: "medium", fitScore: 92, cvHref: cvRoutes.en, cvLabel: "CV English", evidence: ["SAP", "Ayesa", "Konecta", "TransformIA"] }
       }
     },
     cases: [
       {
-        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: Project Management at ICEX and technology consulting", eyebrow: "PROJECT MANAGEMENT · TECHNOLOGY CONSULTING", role: "Project Manager",
-        sector: "Public sector · Digital Workplace · ITSM · technology transformation", summary: "Project Manager at ICEX, with previous AI strategy consulting experience across Madrid Digital, Justice, and UOC.",
-        proof: ["Madrid Digital", "Justice", "UOC", "ICEX", "30+ people", "Jira/JSM", "Microsoft 365", "Power BI"], tags: ["Project Management", "Technology Delivery", "Public Sector", "ITSM"],
+        slug: "ayesa-digital-workplace-sector-publico-icex", title: "Ayesa: progression from consulting and Project Management into SAP", eyebrow: "SAP · PROJECT MANAGEMENT · TECHNOLOGY CONSULTING", role: "SAP Implementation & Business AI · Project Manager",
+        sector: "SAP S/4HANA Cloud Public Edition · SAP Business AI · Technology Delivery", summary: "Internal progression from Madrid Digital, Justice, UOC, and ICEX into an SAP project, backed by two consecutive practical certifications.",
+        proof: ["SAP Project", "C_S4CPB_2602 · 85%", "C_AIG_2604 · 100%", "ICEX", "30+ people", "SAP Business AI"], tags: ["SAP S/4HANA Cloud", "SAP Business AI", "Project Management", "Technology Delivery"],
         publicSafeNote: "Professional description with no internal documentation, client data, or confidential information.",
         sections: [
-          { title: "Current responsibility", body: ["I am a Project Manager at ICEX. I coordinate a 30+ person perimeter and work across planning, tracking, deliverables, contingencies, stakeholders, and reporting with Microsoft 365, Jira/JSM, and Power BI.", "My Ayesa experience also includes Madrid Digital, focused on strategy, roadmaps, modernization, and executive documentation; Justice, focused on functional analysis and process transformation; and UOC, focused on use cases, knowledge/CRM, Salesforce, and functional analysis."] },
-          { title: "What it proves", body: "My work at Ayesa combines Project Management, team coordination, stakeholder management, executive focus, and knowledge of technology and public-sector environments." }
+          { title: "Current progression", body: ["I currently work on an SAP project focused on SAP S/4HANA Cloud Public Edition and SAP Business AI. The transition is reinforced by hands-on system practice and two official certifications earned consecutively.", "My earlier Ayesa journey includes Project Management at ICEX across a 30+ person scope and consulting work for Madrid Digital, Justice, and UOC."] },
+          { title: "What it proves", body: "The progression combines SAP implementation, Project Management, team coordination, stakeholder leadership, executive focus, and technical depth in generative AI." }
         ]
       },
       {

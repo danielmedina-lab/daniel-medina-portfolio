@@ -26,6 +26,18 @@ function selectAnswer(question: string, answers: RecruiterContent["answers"]): A
   const normalized = question.toLowerCase();
 
   if (
+    normalized.includes("sap") ||
+    normalized.includes("s/4hana") ||
+    normalized.includes("s4hana") ||
+    normalized.includes("generative ai") ||
+    normalized.includes("business ai") ||
+    normalized.includes("certification") ||
+    normalized.includes("certificaci")
+  ) {
+    return answers.sap;
+  }
+
+  if (
     normalized.includes("team") ||
     normalized.includes("people") ||
     normalized.includes("equipo") ||

@@ -38,12 +38,12 @@ export default async function LocalizedHomePage({ params }: HomePageProps) {
   return (
     <>
       <Hero dictionary={dictionary} locale={locale} />
+      <CredentialsSection dictionary={dictionary} locale={locale} />
       <ValueAreasSection dictionary={dictionary} locale={locale} />
       <ExperienceSection dictionary={dictionary} locale={locale} />
       <FeaturedCasesSection dictionary={dictionary} locale={locale} />
       <LabSection dictionary={dictionary} locale={locale} />
       <TechnicalStorySection dictionary={dictionary} locale={locale} />
-      <CredentialsSection dictionary={dictionary} locale={locale} />
       <CVHubSection dictionary={dictionary} locale={locale} />
       <ContactSection dictionary={dictionary} locale={locale} />
     </>

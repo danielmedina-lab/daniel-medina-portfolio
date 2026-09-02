@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowRight, BriefcaseBusiness, Download, Globe2, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, BadgeCheck, BriefcaseBusiness, Download, Globe2, TrendingUp, Users } from "lucide-react";
 
 import type { PortfolioDictionary } from "@/content/portfolio";
 import { siteConfig } from "@/lib/constants";
 import { type Locale } from "@/lib/i18n";
 
-const statIcons = [BriefcaseBusiness, Users, Globe2, TrendingUp, BriefcaseBusiness];
+const statIcons = [BriefcaseBusiness, Users, Globe2, TrendingUp, BadgeCheck];
 
 function FloatingMetric({
   value,
@@ -76,8 +76,8 @@ function ProfileVisual({ hero }: { hero: PortfolioDictionary["hero"] }) {
             value={hero.stats[2].value}
           />
 
-          <div className="flex items-center justify-center gap-2 rounded-lg border border-teal/20 bg-mint px-4 py-3 text-xs font-bold text-teal shadow-card lg:absolute lg:bottom-3 lg:left-1/2 lg:-translate-x-1/2">
-            <BriefcaseBusiness aria-hidden="true" size={15} />
+          <div className="flex items-center justify-center gap-2 rounded-lg border border-[#0A6ED1]/25 bg-[#EEF6FD] px-4 py-3 text-xs font-bold text-[#0A6ED1] shadow-card lg:absolute lg:bottom-3 lg:left-1/2 lg:-translate-x-1/2">
+            <BadgeCheck aria-hidden="true" size={15} />
             <span>{hero.stats[4].value} · {hero.stats[4].label}</span>
           </div>
         </div>
@@ -135,8 +135,13 @@ export function Hero({ dictionary, locale }: { dictionary: PortfolioDictionary; 
           <div className="mt-10 border-t border-line pt-5">
             <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-slate/65">{hero.credentialsLabel}</p>
             <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-              {hero.credentials.map((credential) => (
-                <span className="text-sm font-semibold text-slate" key={credential}>
+              {hero.credentials.map((credential, index) => (
+                <span
+                  className={index < 2
+                    ? "rounded-full border border-[#0A6ED1]/25 bg-[#EEF6FD] px-3 py-1 text-sm font-bold text-[#0A6ED1]"
+                    : "py-1 text-sm font-semibold text-slate"}
+                  key={credential}
+                >
                   {credential}
                 </span>
               ))}

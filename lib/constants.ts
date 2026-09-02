@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Daniel Medina Sánchez",
-  role: "Project Manager · Technology Delivery · Applied AI",
+  role: "SAP Implementation · Generative AI · Technology Delivery",
   repoUrl: "https://github.com/danielmedina-lab/daniel-medina-portfolio",
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
